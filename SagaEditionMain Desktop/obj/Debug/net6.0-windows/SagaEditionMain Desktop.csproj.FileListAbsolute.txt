@@ -1,0 +1,18 @@
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.csproj.AssemblyReference.cache
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.csproj.GenerateResource.cache
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.AssemblyInfoInputs.cache
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.AssemblyInfo.cs
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.csproj.CoreCompileInputs.cache
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\bin\Debug\net6.0-windows\SagaEditionMain Desktop.exe
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\bin\Debug\net6.0-windows\SagaEditionMain Desktop.deps.json
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\bin\Debug\net6.0-windows\SagaEditionMain Desktop.runtimeconfig.json
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\bin\Debug\net6.0-windows\SagaEditionMain Desktop.dll
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\bin\Debug\net6.0-windows\SagaEditionMain Desktop.pdb
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.dll
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\refint\SagaEditionMain Desktop.dll
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.pdb
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.genruntimeconfig.cache
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\ref\SagaEditionMain Desktop.dll
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain_Desktop.CharacterSheet.resources
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain_Desktop.ClassList.resources
