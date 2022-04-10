@@ -66,6 +66,7 @@
             this.lblWillDefense = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.speciesComboBox = new System.Windows.Forms.ComboBox();
+            this.lblSpecies = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dexterityScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strengthScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.constitutionScoreNumericUpDown)).BeginInit();
@@ -440,16 +441,27 @@
             // speciesComboBox
             // 
             this.speciesComboBox.FormattingEnabled = true;
-            this.speciesComboBox.Location = new System.Drawing.Point(194, 42);
+            this.speciesComboBox.Location = new System.Drawing.Point(236, 38);
             this.speciesComboBox.Name = "speciesComboBox";
             this.speciesComboBox.Size = new System.Drawing.Size(121, 23);
             this.speciesComboBox.TabIndex = 39;
+            // 
+            // lblSpecies
+            // 
+            this.lblSpecies.AutoSize = true;
+            this.lblSpecies.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSpecies.Location = new System.Drawing.Point(177, 39);
+            this.lblSpecies.Name = "lblSpecies";
+            this.lblSpecies.Size = new System.Drawing.Size(53, 19);
+            this.lblSpecies.TabIndex = 40;
+            this.lblSpecies.Text = "Species";
             // 
             // CharacterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 955);
+            this.Controls.Add(this.lblSpecies);
             this.Controls.Add(this.speciesComboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblWillDefense);
@@ -544,5 +556,6 @@
         private Label lblWillDefense;
         private Label label1;
         private ComboBox speciesComboBox;
+        private Label lblSpecies;
     }
 }

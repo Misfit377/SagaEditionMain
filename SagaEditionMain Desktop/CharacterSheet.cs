@@ -8,15 +8,15 @@ namespace SagaEditionMain_Desktop
     {
         public CharacterSheet()
         {
+
+            InitializeComponent();
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
             var allSpecies = new Species();
             var speciesList = allSpecies.SpeciesList;
-            InitializeComponent();
-            speciesComboBox.BeginUpdate();
-            foreach (var species in speciesList)
-            {
-                speciesComboBox.Items.Add(species.Name);
-            }
-            speciesComboBox.EndUpdate();
+            speciesComboBox.DataSource = speciesList;
+            speciesComboBox.DisplayMember = "Name";
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -31,15 +31,7 @@ namespace SagaEditionMain_Desktop
             int wisScore = Convert.ToInt32(wisdomScoreNumericUpDown.Value);
             int chaScore = Convert.ToInt32(charismaScoreNumericUpDown.Value);
             int heroicLevel = Convert.ToInt32(heroicLevelNumericUpDown.Value);
-            foreach (var species in speciesList)
-            {
-                int index = speciesList.IndexOf(species);
-                if (speciesComboBox.SelectedIndex == index)
-                {
-                    selectedSpecies = species;
-                }
-                
-            }
+            selectedSpecies = speciesComboBox.SelectedItem as Species.SpeciesBase;
 
             var conditionTrack = new ConditionTrack(Convert.ToInt32(conditionNumericUpDown.Value));
             var characterAttributes = new CharacterAttributes(strScore,dexScore,conScore,intScore,wisScore,chaScore);
@@ -59,10 +51,7 @@ namespace SagaEditionMain_Desktop
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         //private void btnRollDice_Click(object sender, EventArgs e)
         //{
