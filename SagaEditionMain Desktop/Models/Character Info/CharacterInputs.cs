@@ -9,9 +9,11 @@ namespace SagaEditionMain_Desktop
         public SkillsTraining CharacterTraining;
         public ConditionTrack ConditionTrack;
         public int HeroicLevel;
+        public Species.SpeciesBase SelectedSpecies { get; set; }
 
-        public CharacterInputs(CharacterAttributes characterAttributes, int heroicLevel, SkillsFocus characterFocus, SkillsTraining characterTraining, ConditionTrack conditionTrack)
+        public CharacterInputs(Species.SpeciesBase selectedSpecies, CharacterAttributes characterAttributes, int heroicLevel, SkillsFocus characterFocus, SkillsTraining characterTraining, ConditionTrack conditionTrack)
         {
+            SelectedSpecies = selectedSpecies;
             CharacterAttributes = characterAttributes;
             CharacterFocus = new SkillsFocus();
             CharacterTraining = new SkillsTraining();

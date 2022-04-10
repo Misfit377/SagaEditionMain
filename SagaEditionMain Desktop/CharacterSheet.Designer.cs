@@ -64,6 +64,8 @@
             this.lblFortDefense = new System.Windows.Forms.Label();
             this.lblReflexDefense = new System.Windows.Forms.Label();
             this.lblWillDefense = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.speciesComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dexterityScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strengthScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.constitutionScoreNumericUpDown)).BeginInit();
@@ -319,7 +321,7 @@
             // 
             this.lblDefenses.AutoSize = true;
             this.lblDefenses.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDefenses.Location = new System.Drawing.Point(302, 87);
+            this.lblDefenses.Location = new System.Drawing.Point(305, 87);
             this.lblDefenses.Name = "lblDefenses";
             this.lblDefenses.Size = new System.Drawing.Size(64, 19);
             this.lblDefenses.TabIndex = 27;
@@ -329,7 +331,7 @@
             // 
             this.lblHeroicLevel.AutoSize = true;
             this.lblHeroicLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblHeroicLevel.Location = new System.Drawing.Point(0, 43);
+            this.lblHeroicLevel.Location = new System.Drawing.Point(0, 39);
             this.lblHeroicLevel.Name = "lblHeroicLevel";
             this.lblHeroicLevel.Size = new System.Drawing.Size(83, 19);
             this.lblHeroicLevel.TabIndex = 28;
@@ -337,7 +339,7 @@
             // 
             // heroicLevelNumericUpDown
             // 
-            this.heroicLevelNumericUpDown.Location = new System.Drawing.Point(87, 39);
+            this.heroicLevelNumericUpDown.Location = new System.Drawing.Point(89, 39);
             this.heroicLevelNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.heroicLevelNumericUpDown.Name = "heroicLevelNumericUpDown";
             this.heroicLevelNumericUpDown.Size = new System.Drawing.Size(70, 23);
@@ -345,7 +347,7 @@
             // 
             // conditionNumericUpDown
             // 
-            this.conditionNumericUpDown.Location = new System.Drawing.Point(238, 39);
+            this.conditionNumericUpDown.Location = new System.Drawing.Point(491, 97);
             this.conditionNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.conditionNumericUpDown.Name = "conditionNumericUpDown";
             this.conditionNumericUpDown.Size = new System.Drawing.Size(70, 23);
@@ -355,7 +357,7 @@
             // 
             this.lblCondition.AutoSize = true;
             this.lblCondition.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCondition.Location = new System.Drawing.Point(163, 43);
+            this.lblCondition.Location = new System.Drawing.Point(416, 97);
             this.lblCondition.Name = "lblCondition";
             this.lblCondition.Size = new System.Drawing.Size(69, 19);
             this.lblCondition.TabIndex = 31;
@@ -427,11 +429,29 @@
             this.lblWillDefense.TabIndex = 37;
             this.lblWillDefense.Text = "Will";
             // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(8, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(780, 2);
+            this.label1.TabIndex = 38;
+            // 
+            // speciesComboBox
+            // 
+            this.speciesComboBox.FormattingEnabled = true;
+            this.speciesComboBox.Location = new System.Drawing.Point(194, 42);
+            this.speciesComboBox.Name = "speciesComboBox";
+            this.speciesComboBox.Size = new System.Drawing.Size(121, 23);
+            this.speciesComboBox.TabIndex = 39;
+            // 
             // CharacterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 955);
+            this.Controls.Add(this.speciesComboBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblWillDefense);
             this.Controls.Add(this.lblReflexDefense);
             this.Controls.Add(this.lblFortDefense);
@@ -522,5 +542,7 @@
         private Label lblFortDefense;
         private Label lblReflexDefense;
         private Label lblWillDefense;
+        private Label label1;
+        private ComboBox speciesComboBox;
     }
 }

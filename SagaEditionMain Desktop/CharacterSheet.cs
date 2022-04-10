@@ -8,11 +8,22 @@ namespace SagaEditionMain_Desktop
     {
         public CharacterSheet()
         {
+            var allSpecies = new Species();
+            var speciesList = allSpecies.SpeciesList;
             InitializeComponent();
+            speciesComboBox.BeginUpdate();
+            foreach (var species in speciesList)
+            {
+                speciesComboBox.Items.Add(species.Name);
+            }
+            speciesComboBox.EndUpdate();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            var allSpecies = new Species();
+            var speciesList = allSpecies.SpeciesList;
+            Species.SpeciesBase selectedSpecies = new Species.SpeciesBase();
             int strScore = Convert.ToInt32(strengthScoreNumericUpDown.Value);
             int dexScore = Convert.ToInt32(dexterityScoreNumericUpDown.Value);
             int conScore = Convert.ToInt32(constitutionScoreNumericUpDown.Value);
@@ -20,12 +31,21 @@ namespace SagaEditionMain_Desktop
             int wisScore = Convert.ToInt32(wisdomScoreNumericUpDown.Value);
             int chaScore = Convert.ToInt32(charismaScoreNumericUpDown.Value);
             int heroicLevel = Convert.ToInt32(heroicLevelNumericUpDown.Value);
+            foreach (var species in speciesList)
+            {
+                int index = speciesList.IndexOf(species);
+                if (speciesComboBox.SelectedIndex == index)
+                {
+                    selectedSpecies = species;
+                }
+                
+            }
 
             var conditionTrack = new ConditionTrack(Convert.ToInt32(conditionNumericUpDown.Value));
             var characterAttributes = new CharacterAttributes(strScore,dexScore,conScore,intScore,wisScore,chaScore);
             var skillsFocus = new SkillsFocus();
             var skillsTraining = new SkillsTraining();
-            var characterInputs = new CharacterInputs(characterAttributes, heroicLevel, skillsFocus, skillsTraining,conditionTrack);
+            var characterInputs = new CharacterInputs(selectedSpecies, characterAttributes, heroicLevel, skillsFocus, skillsTraining,conditionTrack);
             var characterInfo = new CharacterInfo(characterInputs);
             strengthModifierTextBox.Text = characterInfo.CharacterAttributeModifiers.StrengthModifier.ToString();
             dexterityModTextBox.Text = characterInfo.CharacterAttributeModifiers.DexterityModifier.ToString();

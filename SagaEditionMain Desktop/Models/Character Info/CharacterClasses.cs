@@ -9,7 +9,7 @@ namespace SagaEditionMain_Desktop.Models.Character_Info
         {
             var classList = new List<CharacterClassBase>
             {
-            // Heroid Classes
+            // Heroic Classes
                 new CharacterClassBase
                 {
                     Name = "Jedi",
