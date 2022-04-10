@@ -41,7 +41,7 @@
             this.dexterityModTextBox = new System.Windows.Forms.TextBox();
             this.dexterityScoreNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.strengthScoreNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.lbl = new System.Windows.Forms.Label();
+            this.lblConstitution = new System.Windows.Forms.Label();
             this.constitutionScoreNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.constitutionModTextBox = new System.Windows.Forms.TextBox();
             this.lblCharisma = new System.Windows.Forms.Label();
@@ -61,6 +61,9 @@
             this.fortDefenseTextBox = new System.Windows.Forms.TextBox();
             this.refDefenseTextBox = new System.Windows.Forms.TextBox();
             this.willDefTextBox = new System.Windows.Forms.TextBox();
+            this.lblFortDefense = new System.Windows.Forms.Label();
+            this.lblReflexDefense = new System.Windows.Forms.Label();
+            this.lblWillDefense = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dexterityScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strengthScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.constitutionScoreNumericUpDown)).BeginInit();
@@ -163,7 +166,7 @@
             // 
             this.lblDexterity.AutoSize = true;
             this.lblDexterity.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDexterity.Location = new System.Drawing.Point(33, 143);
+            this.lblDexterity.Location = new System.Drawing.Point(33, 138);
             this.lblDexterity.Name = "lblDexterity";
             this.lblDexterity.Size = new System.Drawing.Size(64, 19);
             this.lblDexterity.TabIndex = 10;
@@ -172,7 +175,7 @@
             // dexterityModTextBox
             // 
             this.dexterityModTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dexterityModTextBox.Location = new System.Drawing.Point(177, 143);
+            this.dexterityModTextBox.Location = new System.Drawing.Point(177, 138);
             this.dexterityModTextBox.Multiline = true;
             this.dexterityModTextBox.Name = "dexterityModTextBox";
             this.dexterityModTextBox.PlaceholderText = "0";
@@ -183,7 +186,7 @@
             // 
             // dexterityScoreNumericUpDown
             // 
-            this.dexterityScoreNumericUpDown.Location = new System.Drawing.Point(101, 143);
+            this.dexterityScoreNumericUpDown.Location = new System.Drawing.Point(101, 138);
             this.dexterityScoreNumericUpDown.Name = "dexterityScoreNumericUpDown";
             this.dexterityScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
             this.dexterityScoreNumericUpDown.TabIndex = 13;
@@ -196,19 +199,19 @@
             this.strengthScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
             this.strengthScoreNumericUpDown.TabIndex = 14;
             // 
-            // lbl
+            // lblConstitution
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl.Location = new System.Drawing.Point(10, 175);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(85, 19);
-            this.lbl.TabIndex = 15;
-            this.lbl.Text = "Constitution";
+            this.lblConstitution.AutoSize = true;
+            this.lblConstitution.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblConstitution.Location = new System.Drawing.Point(10, 170);
+            this.lblConstitution.Name = "lblConstitution";
+            this.lblConstitution.Size = new System.Drawing.Size(85, 19);
+            this.lblConstitution.TabIndex = 15;
+            this.lblConstitution.Text = "Constitution";
             // 
             // constitutionScoreNumericUpDown
             // 
-            this.constitutionScoreNumericUpDown.Location = new System.Drawing.Point(101, 172);
+            this.constitutionScoreNumericUpDown.Location = new System.Drawing.Point(101, 167);
             this.constitutionScoreNumericUpDown.Name = "constitutionScoreNumericUpDown";
             this.constitutionScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
             this.constitutionScoreNumericUpDown.TabIndex = 16;
@@ -216,7 +219,7 @@
             // constitutionModTextBox
             // 
             this.constitutionModTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.constitutionModTextBox.Location = new System.Drawing.Point(177, 172);
+            this.constitutionModTextBox.Location = new System.Drawing.Point(177, 167);
             this.constitutionModTextBox.Multiline = true;
             this.constitutionModTextBox.Name = "constitutionModTextBox";
             this.constitutionModTextBox.PlaceholderText = "0";
@@ -229,7 +232,7 @@
             // 
             this.lblCharisma.AutoSize = true;
             this.lblCharisma.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCharisma.Location = new System.Drawing.Point(29, 259);
+            this.lblCharisma.Location = new System.Drawing.Point(29, 254);
             this.lblCharisma.Name = "lblCharisma";
             this.lblCharisma.Size = new System.Drawing.Size(66, 19);
             this.lblCharisma.TabIndex = 18;
@@ -239,7 +242,7 @@
             // 
             this.lblWisdom.AutoSize = true;
             this.lblWisdom.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblWisdom.Location = new System.Drawing.Point(36, 230);
+            this.lblWisdom.Location = new System.Drawing.Point(36, 225);
             this.lblWisdom.Name = "lblWisdom";
             this.lblWisdom.Size = new System.Drawing.Size(59, 19);
             this.lblWisdom.TabIndex = 19;
@@ -249,7 +252,7 @@
             // 
             this.lblIntelligence.AutoSize = true;
             this.lblIntelligence.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblIntelligence.Location = new System.Drawing.Point(17, 201);
+            this.lblIntelligence.Location = new System.Drawing.Point(17, 196);
             this.lblIntelligence.Name = "lblIntelligence";
             this.lblIntelligence.Size = new System.Drawing.Size(78, 19);
             this.lblIntelligence.TabIndex = 20;
@@ -257,21 +260,21 @@
             // 
             // intelligenceScoreNumericUpDown
             // 
-            this.intelligenceScoreNumericUpDown.Location = new System.Drawing.Point(101, 201);
+            this.intelligenceScoreNumericUpDown.Location = new System.Drawing.Point(101, 196);
             this.intelligenceScoreNumericUpDown.Name = "intelligenceScoreNumericUpDown";
             this.intelligenceScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
             this.intelligenceScoreNumericUpDown.TabIndex = 21;
             // 
             // wisdomScoreNumericUpDown
             // 
-            this.wisdomScoreNumericUpDown.Location = new System.Drawing.Point(101, 230);
+            this.wisdomScoreNumericUpDown.Location = new System.Drawing.Point(101, 225);
             this.wisdomScoreNumericUpDown.Name = "wisdomScoreNumericUpDown";
             this.wisdomScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
             this.wisdomScoreNumericUpDown.TabIndex = 22;
             // 
             // charismaScoreNumericUpDown
             // 
-            this.charismaScoreNumericUpDown.Location = new System.Drawing.Point(101, 259);
+            this.charismaScoreNumericUpDown.Location = new System.Drawing.Point(101, 254);
             this.charismaScoreNumericUpDown.Name = "charismaScoreNumericUpDown";
             this.charismaScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
             this.charismaScoreNumericUpDown.TabIndex = 23;
@@ -279,7 +282,7 @@
             // intelligenceModTextBox
             // 
             this.intelligenceModTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.intelligenceModTextBox.Location = new System.Drawing.Point(177, 201);
+            this.intelligenceModTextBox.Location = new System.Drawing.Point(177, 196);
             this.intelligenceModTextBox.Multiline = true;
             this.intelligenceModTextBox.Name = "intelligenceModTextBox";
             this.intelligenceModTextBox.PlaceholderText = "0";
@@ -291,7 +294,7 @@
             // wisdomModTextBox
             // 
             this.wisdomModTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wisdomModTextBox.Location = new System.Drawing.Point(177, 230);
+            this.wisdomModTextBox.Location = new System.Drawing.Point(177, 225);
             this.wisdomModTextBox.Multiline = true;
             this.wisdomModTextBox.Name = "wisdomModTextBox";
             this.wisdomModTextBox.PlaceholderText = "0";
@@ -303,7 +306,7 @@
             // charismaModTextBox
             // 
             this.charismaModTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.charismaModTextBox.Location = new System.Drawing.Point(177, 259);
+            this.charismaModTextBox.Location = new System.Drawing.Point(177, 254);
             this.charismaModTextBox.Multiline = true;
             this.charismaModTextBox.Name = "charismaModTextBox";
             this.charismaModTextBox.PlaceholderText = "0";
@@ -316,7 +319,7 @@
             // 
             this.lblDefenses.AutoSize = true;
             this.lblDefenses.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDefenses.Location = new System.Drawing.Point(308, 89);
+            this.lblDefenses.Location = new System.Drawing.Point(302, 87);
             this.lblDefenses.Name = "lblDefenses";
             this.lblDefenses.Size = new System.Drawing.Size(64, 19);
             this.lblDefenses.TabIndex = 27;
@@ -361,7 +364,7 @@
             // fortDefenseTextBox
             // 
             this.fortDefenseTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fortDefenseTextBox.Location = new System.Drawing.Point(302, 111);
+            this.fortDefenseTextBox.Location = new System.Drawing.Point(302, 109);
             this.fortDefenseTextBox.Multiline = true;
             this.fortDefenseTextBox.Name = "fortDefenseTextBox";
             this.fortDefenseTextBox.PlaceholderText = "0";
@@ -373,7 +376,7 @@
             // refDefenseTextBox
             // 
             this.refDefenseTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.refDefenseTextBox.Location = new System.Drawing.Point(302, 143);
+            this.refDefenseTextBox.Location = new System.Drawing.Point(302, 138);
             this.refDefenseTextBox.Multiline = true;
             this.refDefenseTextBox.Name = "refDefenseTextBox";
             this.refDefenseTextBox.PlaceholderText = "0";
@@ -385,7 +388,7 @@
             // willDefTextBox
             // 
             this.willDefTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.willDefTextBox.Location = new System.Drawing.Point(302, 172);
+            this.willDefTextBox.Location = new System.Drawing.Point(302, 167);
             this.willDefTextBox.Multiline = true;
             this.willDefTextBox.Name = "willDefTextBox";
             this.willDefTextBox.PlaceholderText = "0";
@@ -394,11 +397,44 @@
             this.willDefTextBox.Size = new System.Drawing.Size(70, 23);
             this.willDefTextBox.TabIndex = 34;
             // 
+            // lblFortDefense
+            // 
+            this.lblFortDefense.AutoSize = true;
+            this.lblFortDefense.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFortDefense.Location = new System.Drawing.Point(262, 112);
+            this.lblFortDefense.Name = "lblFortDefense";
+            this.lblFortDefense.Size = new System.Drawing.Size(34, 19);
+            this.lblFortDefense.TabIndex = 35;
+            this.lblFortDefense.Text = "Fort";
+            // 
+            // lblReflexDefense
+            // 
+            this.lblReflexDefense.AutoSize = true;
+            this.lblReflexDefense.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblReflexDefense.Location = new System.Drawing.Point(262, 141);
+            this.lblReflexDefense.Name = "lblReflexDefense";
+            this.lblReflexDefense.Size = new System.Drawing.Size(28, 19);
+            this.lblReflexDefense.TabIndex = 36;
+            this.lblReflexDefense.Text = "Ref";
+            // 
+            // lblWillDefense
+            // 
+            this.lblWillDefense.AutoSize = true;
+            this.lblWillDefense.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblWillDefense.Location = new System.Drawing.Point(262, 170);
+            this.lblWillDefense.Name = "lblWillDefense";
+            this.lblWillDefense.Size = new System.Drawing.Size(31, 19);
+            this.lblWillDefense.TabIndex = 37;
+            this.lblWillDefense.Text = "Will";
+            // 
             // CharacterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 955);
+            this.Controls.Add(this.lblWillDefense);
+            this.Controls.Add(this.lblReflexDefense);
+            this.Controls.Add(this.lblFortDefense);
             this.Controls.Add(this.willDefTextBox);
             this.Controls.Add(this.refDefenseTextBox);
             this.Controls.Add(this.fortDefenseTextBox);
@@ -418,7 +454,7 @@
             this.Controls.Add(this.lblCharisma);
             this.Controls.Add(this.constitutionModTextBox);
             this.Controls.Add(this.constitutionScoreNumericUpDown);
-            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.lblConstitution);
             this.Controls.Add(this.strengthScoreNumericUpDown);
             this.Controls.Add(this.dexterityScoreNumericUpDown);
             this.Controls.Add(this.dexterityModTextBox);
@@ -463,7 +499,7 @@
         private TextBox dexterityModTextBox;
         private NumericUpDown dexterityScoreNumericUpDown;
         private NumericUpDown strengthScoreNumericUpDown;
-        private Label lbl;
+        private Label lblConstitution;
         private NumericUpDown constitutionScoreNumericUpDown;
         private TextBox constitutionModTextBox;
         private Label lblCharisma;
@@ -483,5 +519,8 @@
         private TextBox fortDefenseTextBox;
         private TextBox refDefenseTextBox;
         private TextBox willDefTextBox;
+        private Label lblFortDefense;
+        private Label lblReflexDefense;
+        private Label lblWillDefense;
     }
 }

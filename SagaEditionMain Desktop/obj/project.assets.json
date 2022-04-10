@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\doodl\\Documents\\Visual Studio Projects\\SagaEditionMain Desktop\\SagaEditionMain Desktop\\SagaEditionMain Desktop.csproj",
+      "projectUniqueName": "C:\\Users\\doodl\\Documents\\Visual Studio Projects\\SagaEditionMain Desktop\\SagaEditionMain\\SagaEditionMain Desktop\\SagaEditionMain Desktop.csproj",
       "projectName": "SagaEditionMain Desktop",
-      "projectPath": "C:\\Users\\doodl\\Documents\\Visual Studio Projects\\SagaEditionMain Desktop\\SagaEditionMain Desktop\\SagaEditionMain Desktop.csproj",
+      "projectPath": "C:\\Users\\doodl\\Documents\\Visual Studio Projects\\SagaEditionMain Desktop\\SagaEditionMain\\SagaEditionMain Desktop\\SagaEditionMain Desktop.csproj",
       "packagesPath": "C:\\Users\\doodl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\doodl\\Documents\\Visual Studio Projects\\SagaEditionMain Desktop\\SagaEditionMain Desktop\\obj\\",
+      "outputPath": "C:\\Users\\doodl\\Documents\\Visual Studio Projects\\SagaEditionMain Desktop\\SagaEditionMain\\SagaEditionMain Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
