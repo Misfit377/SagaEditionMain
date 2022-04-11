@@ -387,7 +387,7 @@ namespace SagaEditionMain_Desktop.Models.Character_Info
 
         public class CharacterClassBase
         {
-            public string Name { get; set; }
+            public string? Name { get; set; }
             public int Level { get; set; }
             public int ReflexBonus { get; set; }
             public int FortitudeBonus { get; set; }

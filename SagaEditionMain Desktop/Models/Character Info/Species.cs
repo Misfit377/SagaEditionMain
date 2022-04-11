@@ -68,7 +68,7 @@ namespace SagaEditionMain_Desktop.Models.Character_Info
         }
         public class SpeciesBase
         {
-            public string Name { get; set; }
+            public string? Name { get; set; }
         }
 
     }

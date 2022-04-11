@@ -24,7 +24,7 @@ namespace SagaEditionMain_Desktop.Models.Character_Info
             CharacterFocus = characterInputs.CharacterFocus;
             CharacterTraining = characterInputs.CharacterTraining;
             CharacterSkills = new Skills(CharacterAttributeModifiers, characterInputs.HeroicLevel, CharacterTraining, CharacterFocus);
-            CharacterDefenses = new Defenses(CharacterAttributeModifiers, characterInputs.HeroicLevel);
+            CharacterDefenses = new Defenses(CharacterAttributeModifiers, characterInputs.HeroicLevel, characterInputs.FortMiscBonus, characterInputs.RefMiscBonus, characterInputs.WillMiscBonus);
         }
     }
 }

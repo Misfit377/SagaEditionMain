@@ -9,16 +9,23 @@ namespace SagaEditionMain_Desktop
         public SkillsTraining CharacterTraining;
         public ConditionTrack ConditionTrack;
         public int HeroicLevel;
-        public Species.SpeciesBase SelectedSpecies { get; set; }
-
-        public CharacterInputs(Species.SpeciesBase selectedSpecies, CharacterAttributes characterAttributes, int heroicLevel, SkillsFocus characterFocus, SkillsTraining characterTraining, ConditionTrack conditionTrack)
+        public int FortMiscBonus;
+        public int RefMiscBonus;
+        public int WillMiscBonus;
+        public Species.SpeciesBase? SelectedSpecies;
+        public CharacterHealth CharacterHP;
+        public CharacterInputs(Species.SpeciesBase? selectedSpecies, CharacterAttributes characterAttributes, CharacterHealth characterHP, int heroicLevel, SkillsFocus characterFocus, SkillsTraining characterTraining, ConditionTrack conditionTrack, int fortMiscBonus, int refMiscBonus, int willMiscBonus)
         {
+            CharacterHP = characterHP;
             SelectedSpecies = selectedSpecies;
             CharacterAttributes = characterAttributes;
             CharacterFocus = new SkillsFocus();
             CharacterTraining = new SkillsTraining();
             ConditionTrack = conditionTrack;
             HeroicLevel = heroicLevel;
+            FortMiscBonus = fortMiscBonus;
+            WillMiscBonus = willMiscBonus;
+            RefMiscBonus = refMiscBonus;
         }
     }
 }

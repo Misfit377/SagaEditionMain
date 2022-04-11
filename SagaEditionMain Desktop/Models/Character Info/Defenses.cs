@@ -8,16 +8,17 @@ namespace SagaEditionMain_Desktop.Models.Character_Info
         public int FortitudeDefense;
         public int ReflexDefense;
         public int WillDefense;
-        public Defenses(CharacterAttributeModifiers attributeModifiers, int heroicLevel)
+        public Defenses(CharacterAttributeModifiers attributeModifiers, int heroicLevel, int fortBonus, int refBonus, int willBonus)
         {
-            FortitudeDefense = SetDefenses(attributeModifiers.ConstitutionModifier, heroicLevel);
-            ReflexDefense = SetDefenses(attributeModifiers.DexterityModifier, heroicLevel);
-            WillDefense = SetDefenses(attributeModifiers.WisdomModifier, heroicLevel);
+            FortitudeDefense = SetDefenses(attributeModifiers.ConstitutionModifier, heroicLevel, fortBonus);
+            ReflexDefense = SetDefenses(attributeModifiers.DexterityModifier, heroicLevel, refBonus);
+            WillDefense = SetDefenses(attributeModifiers.WisdomModifier, heroicLevel, willBonus);
         }
-        static int SetDefenses(int attribute, int heroicLevel)
+        static int SetDefenses(int attribute, int heroicLevel, int miscbonus)
         {
-            int value = 10;
-            value = value + attribute + heroicLevel;
+            int value = 0;
+            int baseValue = 10;
+            value = baseValue + attribute + heroicLevel + miscbonus;
 
             return value;
         }

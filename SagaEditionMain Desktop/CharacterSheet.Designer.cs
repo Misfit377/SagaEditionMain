@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCharacterName = new System.Windows.Forms.Label();
             this.characterNameTextBox = new System.Windows.Forms.TextBox();
             this.lblPlayerName = new System.Windows.Forms.Label();
@@ -64,9 +65,32 @@
             this.lblFortDefense = new System.Windows.Forms.Label();
             this.lblReflexDefense = new System.Windows.Forms.Label();
             this.lblWillDefense = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDefensesDivider = new System.Windows.Forms.Label();
             this.speciesComboBox = new System.Windows.Forms.ComboBox();
             this.lblSpecies = new System.Windows.Forms.Label();
+            this.lblClassList = new System.Windows.Forms.Label();
+            this.classListComboBox = new System.Windows.Forms.ComboBox();
+            this.classLevelNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.lvlClassLevel = new System.Windows.Forms.Label();
+            this.addClassButton = new System.Windows.Forms.Button();
+            this.lblSkillDivider = new System.Windows.Forms.Label();
+            this.currentHealthNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.lblCurrentHealth = new System.Windows.Forms.Label();
+            this.lblMaxHealth = new System.Windows.Forms.Label();
+            this.lblDamageReduction = new System.Windows.Forms.Label();
+            this.damageReductionNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.lblCurrentShieldRating = new System.Windows.Forms.Label();
+            this.currentShieldRatingNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.maxHealthNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.maxShieldRatingNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.lblMaxShieldRating = new System.Windows.Forms.Label();
+            this.fortificationDefenseBonusNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.reflexDefenseBonusNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.willDefenseBonusNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bonusHPNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dexterityScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strengthScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.constitutionScoreNumericUpDown)).BeginInit();
@@ -75,6 +99,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.charismaScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heroicLevelNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.conditionNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classLevelNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentHealthNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.damageReductionNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentShieldRatingNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxHealthNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxShieldRatingNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fortificationDefenseBonusNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reflexDefenseBonusNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.willDefenseBonusNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bonusHPNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCharacterName
@@ -322,11 +356,12 @@
             // 
             this.lblDefenses.AutoSize = true;
             this.lblDefenses.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDefenses.Location = new System.Drawing.Point(305, 87);
+            this.lblDefenses.Location = new System.Drawing.Point(353, 87);
             this.lblDefenses.Name = "lblDefenses";
             this.lblDefenses.Size = new System.Drawing.Size(64, 19);
             this.lblDefenses.TabIndex = 27;
             this.lblDefenses.Text = "Defenses";
+            this.lblDefenses.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblDefenses_MouseMove);
             // 
             // lblHeroicLevel
             // 
@@ -343,12 +378,13 @@
             this.heroicLevelNumericUpDown.Location = new System.Drawing.Point(89, 39);
             this.heroicLevelNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.heroicLevelNumericUpDown.Name = "heroicLevelNumericUpDown";
+            this.heroicLevelNumericUpDown.ReadOnly = true;
             this.heroicLevelNumericUpDown.Size = new System.Drawing.Size(70, 23);
             this.heroicLevelNumericUpDown.TabIndex = 29;
             // 
             // conditionNumericUpDown
             // 
-            this.conditionNumericUpDown.Location = new System.Drawing.Point(491, 97);
+            this.conditionNumericUpDown.Location = new System.Drawing.Point(333, 254);
             this.conditionNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.conditionNumericUpDown.Name = "conditionNumericUpDown";
             this.conditionNumericUpDown.Size = new System.Drawing.Size(70, 23);
@@ -358,7 +394,7 @@
             // 
             this.lblCondition.AutoSize = true;
             this.lblCondition.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCondition.Location = new System.Drawing.Point(416, 97);
+            this.lblCondition.Location = new System.Drawing.Point(258, 254);
             this.lblCondition.Name = "lblCondition";
             this.lblCondition.Size = new System.Drawing.Size(69, 19);
             this.lblCondition.TabIndex = 31;
@@ -367,7 +403,7 @@
             // fortDefenseTextBox
             // 
             this.fortDefenseTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fortDefenseTextBox.Location = new System.Drawing.Point(302, 109);
+            this.fortDefenseTextBox.Location = new System.Drawing.Point(349, 109);
             this.fortDefenseTextBox.Multiline = true;
             this.fortDefenseTextBox.Name = "fortDefenseTextBox";
             this.fortDefenseTextBox.PlaceholderText = "0";
@@ -379,7 +415,7 @@
             // refDefenseTextBox
             // 
             this.refDefenseTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.refDefenseTextBox.Location = new System.Drawing.Point(302, 138);
+            this.refDefenseTextBox.Location = new System.Drawing.Point(349, 138);
             this.refDefenseTextBox.Multiline = true;
             this.refDefenseTextBox.Name = "refDefenseTextBox";
             this.refDefenseTextBox.PlaceholderText = "0";
@@ -391,7 +427,7 @@
             // willDefTextBox
             // 
             this.willDefTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.willDefTextBox.Location = new System.Drawing.Point(302, 167);
+            this.willDefTextBox.Location = new System.Drawing.Point(349, 167);
             this.willDefTextBox.Multiline = true;
             this.willDefTextBox.Name = "willDefTextBox";
             this.willDefTextBox.PlaceholderText = "0";
@@ -404,39 +440,39 @@
             // 
             this.lblFortDefense.AutoSize = true;
             this.lblFortDefense.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblFortDefense.Location = new System.Drawing.Point(262, 112);
+            this.lblFortDefense.Location = new System.Drawing.Point(263, 110);
             this.lblFortDefense.Name = "lblFortDefense";
-            this.lblFortDefense.Size = new System.Drawing.Size(34, 19);
+            this.lblFortDefense.Size = new System.Drawing.Size(81, 19);
             this.lblFortDefense.TabIndex = 35;
-            this.lblFortDefense.Text = "Fort";
+            this.lblFortDefense.Text = "Fortification";
             // 
             // lblReflexDefense
             // 
             this.lblReflexDefense.AutoSize = true;
             this.lblReflexDefense.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblReflexDefense.Location = new System.Drawing.Point(262, 141);
+            this.lblReflexDefense.Location = new System.Drawing.Point(299, 138);
             this.lblReflexDefense.Name = "lblReflexDefense";
-            this.lblReflexDefense.Size = new System.Drawing.Size(28, 19);
+            this.lblReflexDefense.Size = new System.Drawing.Size(44, 19);
             this.lblReflexDefense.TabIndex = 36;
-            this.lblReflexDefense.Text = "Ref";
+            this.lblReflexDefense.Text = "Reflex";
             // 
             // lblWillDefense
             // 
             this.lblWillDefense.AutoSize = true;
             this.lblWillDefense.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblWillDefense.Location = new System.Drawing.Point(262, 170);
+            this.lblWillDefense.Location = new System.Drawing.Point(312, 167);
             this.lblWillDefense.Name = "lblWillDefense";
             this.lblWillDefense.Size = new System.Drawing.Size(31, 19);
             this.lblWillDefense.TabIndex = 37;
             this.lblWillDefense.Text = "Will";
             // 
-            // label1
+            // lblDefensesDivider
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(8, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(780, 2);
-            this.label1.TabIndex = 38;
+            this.lblDefensesDivider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDefensesDivider.Location = new System.Drawing.Point(8, 74);
+            this.lblDefensesDivider.Name = "lblDefensesDivider";
+            this.lblDefensesDivider.Size = new System.Drawing.Size(780, 2);
+            this.lblDefensesDivider.TabIndex = 38;
             // 
             // speciesComboBox
             // 
@@ -456,14 +492,236 @@
             this.lblSpecies.TabIndex = 40;
             this.lblSpecies.Text = "Species";
             // 
+            // lblClassList
+            // 
+            this.lblClassList.AutoSize = true;
+            this.lblClassList.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblClassList.Location = new System.Drawing.Point(363, 39);
+            this.lblClassList.Name = "lblClassList";
+            this.lblClassList.Size = new System.Drawing.Size(40, 19);
+            this.lblClassList.TabIndex = 41;
+            this.lblClassList.Text = "Class";
+            // 
+            // classListComboBox
+            // 
+            this.classListComboBox.FormattingEnabled = true;
+            this.classListComboBox.Location = new System.Drawing.Point(409, 39);
+            this.classListComboBox.Name = "classListComboBox";
+            this.classListComboBox.Size = new System.Drawing.Size(121, 23);
+            this.classListComboBox.TabIndex = 42;
+            this.classListComboBox.SelectedIndexChanged += new System.EventHandler(this.classListComboBox_SelectedIndexChanged);
+            // 
+            // classLevelNumericUpDown
+            // 
+            this.classLevelNumericUpDown.Location = new System.Drawing.Point(617, 38);
+            this.classLevelNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.classLevelNumericUpDown.Name = "classLevelNumericUpDown";
+            this.classLevelNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.classLevelNumericUpDown.TabIndex = 43;
+            // 
+            // lvlClassLevel
+            // 
+            this.lvlClassLevel.AutoSize = true;
+            this.lvlClassLevel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lvlClassLevel.Location = new System.Drawing.Point(536, 39);
+            this.lvlClassLevel.Name = "lvlClassLevel";
+            this.lvlClassLevel.Size = new System.Drawing.Size(75, 19);
+            this.lvlClassLevel.TabIndex = 44;
+            this.lvlClassLevel.Text = "Class Level";
+            // 
+            // addClassButton
+            // 
+            this.addClassButton.Location = new System.Drawing.Point(693, 39);
+            this.addClassButton.Name = "addClassButton";
+            this.addClassButton.Size = new System.Drawing.Size(75, 23);
+            this.addClassButton.TabIndex = 45;
+            this.addClassButton.Text = "Add Class";
+            this.addClassButton.UseVisualStyleBackColor = true;
+            this.addClassButton.Click += new System.EventHandler(this.addClassButton_Click);
+            // 
+            // lblSkillDivider
+            // 
+            this.lblSkillDivider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblSkillDivider.Location = new System.Drawing.Point(8, 301);
+            this.lblSkillDivider.Name = "lblSkillDivider";
+            this.lblSkillDivider.Size = new System.Drawing.Size(780, 2);
+            this.lblSkillDivider.TabIndex = 46;
+            // 
+            // currentHealthNumericUpDown
+            // 
+            this.currentHealthNumericUpDown.Location = new System.Drawing.Point(521, 112);
+            this.currentHealthNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.currentHealthNumericUpDown.Name = "currentHealthNumericUpDown";
+            this.currentHealthNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.currentHealthNumericUpDown.TabIndex = 48;
+            // 
+            // lblCurrentHealth
+            // 
+            this.lblCurrentHealth.AutoSize = true;
+            this.lblCurrentHealth.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCurrentHealth.Location = new System.Drawing.Point(515, 90);
+            this.lblCurrentHealth.Name = "lblCurrentHealth";
+            this.lblCurrentHealth.Size = new System.Drawing.Size(78, 19);
+            this.lblCurrentHealth.TabIndex = 49;
+            this.lblCurrentHealth.Text = "Current HP";
+            // 
+            // lblMaxHealth
+            // 
+            this.lblMaxHealth.AutoSize = true;
+            this.lblMaxHealth.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMaxHealth.Location = new System.Drawing.Point(604, 90);
+            this.lblMaxHealth.Name = "lblMaxHealth";
+            this.lblMaxHealth.Size = new System.Drawing.Size(57, 19);
+            this.lblMaxHealth.TabIndex = 50;
+            this.lblMaxHealth.Text = "Max HP";
+            // 
+            // lblDamageReduction
+            // 
+            this.lblDamageReduction.AutoSize = true;
+            this.lblDamageReduction.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDamageReduction.Location = new System.Drawing.Point(295, 193);
+            this.lblDamageReduction.Name = "lblDamageReduction";
+            this.lblDamageReduction.Size = new System.Drawing.Size(125, 19);
+            this.lblDamageReduction.TabIndex = 51;
+            this.lblDamageReduction.Text = "Damage Reduction";
+            // 
+            // damageReductionNumericUpDown
+            // 
+            this.damageReductionNumericUpDown.Location = new System.Drawing.Point(349, 215);
+            this.damageReductionNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.damageReductionNumericUpDown.Name = "damageReductionNumericUpDown";
+            this.damageReductionNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.damageReductionNumericUpDown.TabIndex = 52;
+            // 
+            // lblCurrentShieldRating
+            // 
+            this.lblCurrentShieldRating.AutoSize = true;
+            this.lblCurrentShieldRating.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCurrentShieldRating.Location = new System.Drawing.Point(420, 193);
+            this.lblCurrentShieldRating.Name = "lblCurrentShieldRating";
+            this.lblCurrentShieldRating.Size = new System.Drawing.Size(75, 19);
+            this.lblCurrentShieldRating.TabIndex = 53;
+            this.lblCurrentShieldRating.Text = "Current SR";
+            // 
+            // currentShieldRatingNumericUpDown
+            // 
+            this.currentShieldRatingNumericUpDown.Location = new System.Drawing.Point(425, 215);
+            this.currentShieldRatingNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.currentShieldRatingNumericUpDown.Name = "currentShieldRatingNumericUpDown";
+            this.currentShieldRatingNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.currentShieldRatingNumericUpDown.TabIndex = 54;
+            // 
+            // maxHealthNumericUpDown
+            // 
+            this.maxHealthNumericUpDown.Location = new System.Drawing.Point(597, 112);
+            this.maxHealthNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.maxHealthNumericUpDown.Name = "maxHealthNumericUpDown";
+            this.maxHealthNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.maxHealthNumericUpDown.TabIndex = 55;
+            // 
+            // maxShieldRatingNumericUpDown
+            // 
+            this.maxShieldRatingNumericUpDown.Location = new System.Drawing.Point(501, 215);
+            this.maxShieldRatingNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.maxShieldRatingNumericUpDown.Name = "maxShieldRatingNumericUpDown";
+            this.maxShieldRatingNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.maxShieldRatingNumericUpDown.TabIndex = 56;
+            // 
+            // lblMaxShieldRating
+            // 
+            this.lblMaxShieldRating.AutoSize = true;
+            this.lblMaxShieldRating.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMaxShieldRating.Location = new System.Drawing.Point(517, 193);
+            this.lblMaxShieldRating.Name = "lblMaxShieldRating";
+            this.lblMaxShieldRating.Size = new System.Drawing.Size(54, 19);
+            this.lblMaxShieldRating.TabIndex = 57;
+            this.lblMaxShieldRating.Text = "Max SR";
+            // 
+            // fortificationDefenseBonusNumericUpDown
+            // 
+            this.fortificationDefenseBonusNumericUpDown.Location = new System.Drawing.Point(425, 109);
+            this.fortificationDefenseBonusNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.fortificationDefenseBonusNumericUpDown.Name = "fortificationDefenseBonusNumericUpDown";
+            this.fortificationDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.fortificationDefenseBonusNumericUpDown.TabIndex = 58;
+            this.fortificationDefenseBonusNumericUpDown.ValueChanged += new System.EventHandler(this.fortificationDefenseBonusNumericUpDown_ValueChanged);
+            // 
+            // reflexDefenseBonusNumericUpDown
+            // 
+            this.reflexDefenseBonusNumericUpDown.Location = new System.Drawing.Point(425, 138);
+            this.reflexDefenseBonusNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.reflexDefenseBonusNumericUpDown.Name = "reflexDefenseBonusNumericUpDown";
+            this.reflexDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.reflexDefenseBonusNumericUpDown.TabIndex = 59;
+            this.reflexDefenseBonusNumericUpDown.ValueChanged += new System.EventHandler(this.reflexDefenseBonusNumericUpDown_ValueChanged);
+            // 
+            // willDefenseBonusNumericUpDown
+            // 
+            this.willDefenseBonusNumericUpDown.Location = new System.Drawing.Point(425, 167);
+            this.willDefenseBonusNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.willDefenseBonusNumericUpDown.Name = "willDefenseBonusNumericUpDown";
+            this.willDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.willDefenseBonusNumericUpDown.TabIndex = 60;
+            this.willDefenseBonusNumericUpDown.ValueChanged += new System.EventHandler(this.willDefenseBonusNumericUpDown_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(431, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 19);
+            this.label1.TabIndex = 61;
+            this.label1.Text = "Bonuses";
+            // 
+            // bonusHPNumericUpDown
+            // 
+            this.bonusHPNumericUpDown.Location = new System.Drawing.Point(673, 112);
+            this.bonusHPNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.bonusHPNumericUpDown.Name = "bonusHPNumericUpDown";
+            this.bonusHPNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.bonusHPNumericUpDown.TabIndex = 62;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(673, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 19);
+            this.label2.TabIndex = 63;
+            this.label2.Text = "Bonus HP";
+            // 
             // CharacterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 955);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.bonusHPNumericUpDown);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.willDefenseBonusNumericUpDown);
+            this.Controls.Add(this.reflexDefenseBonusNumericUpDown);
+            this.Controls.Add(this.fortificationDefenseBonusNumericUpDown);
+            this.Controls.Add(this.lblMaxShieldRating);
+            this.Controls.Add(this.maxShieldRatingNumericUpDown);
+            this.Controls.Add(this.maxHealthNumericUpDown);
+            this.Controls.Add(this.currentShieldRatingNumericUpDown);
+            this.Controls.Add(this.lblCurrentShieldRating);
+            this.Controls.Add(this.damageReductionNumericUpDown);
+            this.Controls.Add(this.lblDamageReduction);
+            this.Controls.Add(this.lblMaxHealth);
+            this.Controls.Add(this.lblCurrentHealth);
+            this.Controls.Add(this.currentHealthNumericUpDown);
+            this.Controls.Add(this.lblSkillDivider);
+            this.Controls.Add(this.addClassButton);
+            this.Controls.Add(this.lvlClassLevel);
+            this.Controls.Add(this.classLevelNumericUpDown);
+            this.Controls.Add(this.classListComboBox);
+            this.Controls.Add(this.lblClassList);
             this.Controls.Add(this.lblSpecies);
             this.Controls.Add(this.speciesComboBox);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblDefensesDivider);
             this.Controls.Add(this.lblWillDefense);
             this.Controls.Add(this.lblReflexDefense);
             this.Controls.Add(this.lblFortDefense);
@@ -511,6 +769,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.charismaScoreNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.heroicLevelNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.conditionNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classLevelNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentHealthNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.damageReductionNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentShieldRatingNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxHealthNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxShieldRatingNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fortificationDefenseBonusNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reflexDefenseBonusNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.willDefenseBonusNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bonusHPNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -554,8 +822,31 @@
         private Label lblFortDefense;
         private Label lblReflexDefense;
         private Label lblWillDefense;
-        private Label label1;
+        private Label lblDefensesDivider;
         private ComboBox speciesComboBox;
         private Label lblSpecies;
+        private Label lblClassList;
+        private ComboBox classListComboBox;
+        private NumericUpDown classLevelNumericUpDown;
+        private Label lvlClassLevel;
+        private Button addClassButton;
+        private Label lblSkillDivider;
+        private NumericUpDown currentHealthNumericUpDown;
+        private Label lblCurrentHealth;
+        private Label lblMaxHealth;
+        private Label lblDamageReduction;
+        private NumericUpDown damageReductionNumericUpDown;
+        private Label lblCurrentShieldRating;
+        private NumericUpDown currentShieldRatingNumericUpDown;
+        private NumericUpDown maxHealthNumericUpDown;
+        private NumericUpDown maxShieldRatingNumericUpDown;
+        private Label lblMaxShieldRating;
+        private NumericUpDown fortificationDefenseBonusNumericUpDown;
+        private NumericUpDown reflexDefenseBonusNumericUpDown;
+        private NumericUpDown willDefenseBonusNumericUpDown;
+        private Label label1;
+        private NumericUpDown bonusHPNumericUpDown;
+        private Label label2;
+        private ToolTip toolTip1;
     }
 }
