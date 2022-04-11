@@ -84,6 +84,7 @@ namespace SagaEditionMain_Desktop
                 SelectedClass = classListComboBox.SelectedItem as CharacterClasses.CharacterClassBase;
                 classLevelNumericUpDown.Value = SelectedClass.Level;
                 
+                
 
             }
             catch (Exception)
@@ -100,11 +101,21 @@ namespace SagaEditionMain_Desktop
                 SelectedClass = classListComboBox.SelectedItem as CharacterClasses.CharacterClassBase;
                 SelectedClass.Level = Convert.ToInt32(classLevelNumericUpDown.Value);
                 HeroicLevel = 0;
+                string leveledClasses = "";
                 foreach (var characterClass in AllClasses.ClassList)
                 {
                     HeroicLevel = HeroicLevel + characterClass.Level;
                 }
                 heroicLevelNumericUpDown.Value = HeroicLevel;
+                foreach (var possibleClass in AllClasses.ClassList)
+                {
+                    if (possibleClass.Level > 0)
+                    {
+                        leveledClasses = leveledClasses + " " + possibleClass.Name + " " + possibleClass.Level.ToString();
+                    }
+
+                }
+                allLeveledClassesTextBox.Text = leveledClasses;
             }
             catch (Exception)
             {
@@ -130,6 +141,11 @@ namespace SagaEditionMain_Desktop
         private void lblDefenses_MouseMove(object sender, MouseEventArgs e)
         {
             toolTip1.SetToolTip(lblDefenses, "10 + Heroic Level + Attribute Mods + Bonuses");
+        }
+
+        private void addClassButton_MouseMove(object sender, MouseEventArgs e)
+        {
+            toolTip1.SetToolTip(addClassButton, "Click to set the level for a specific class.");
         }
 
         //private void btnRollDice_Click(object sender, EventArgs e)
