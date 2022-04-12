@@ -7,5 +7,8 @@
     <Compile Update="ClassList.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SkillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

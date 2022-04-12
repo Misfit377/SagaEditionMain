@@ -93,6 +93,11 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.allLeveledClassesTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblDamageThreshold = new System.Windows.Forms.Label();
+            this.damageThresholdTextBox = new System.Windows.Forms.TextBox();
+            this.damageThresholdBonusNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.skillFocusAndTrainingButton = new System.Windows.Forms.Button();
+            this.lblAcrobaticsSkillValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dexterityScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strengthScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.constitutionScoreNumericUpDown)).BeginInit();
@@ -111,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.reflexDefenseBonusNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.willDefenseBonusNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bonusHPNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.damageThresholdBonusNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCharacterName
@@ -386,7 +392,7 @@
             // 
             // conditionNumericUpDown
             // 
-            this.conditionNumericUpDown.Location = new System.Drawing.Point(333, 282);
+            this.conditionNumericUpDown.Location = new System.Drawing.Point(383, 291);
             this.conditionNumericUpDown.Maximum = new decimal(new int[] {
             0,
             0,
@@ -406,11 +412,12 @@
             // 
             this.lblCondition.AutoSize = true;
             this.lblCondition.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCondition.Location = new System.Drawing.Point(258, 282);
+            this.lblCondition.Location = new System.Drawing.Point(363, 269);
             this.lblCondition.Name = "lblCondition";
-            this.lblCondition.Size = new System.Drawing.Size(69, 19);
+            this.lblCondition.Size = new System.Drawing.Size(104, 19);
             this.lblCondition.TabIndex = 31;
-            this.lblCondition.Text = "Condition";
+            this.lblCondition.Text = "Condition Track";
+            this.lblCondition.Click += new System.EventHandler(this.lblCondition_Click);
             // 
             // fortDefenseTextBox
             // 
@@ -722,11 +729,67 @@
             this.label3.TabIndex = 65;
             this.label3.Text = "Character Classes";
             // 
+            // lblDamageThreshold
+            // 
+            this.lblDamageThreshold.AutoSize = true;
+            this.lblDamageThreshold.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDamageThreshold.Location = new System.Drawing.Point(361, 221);
+            this.lblDamageThreshold.Name = "lblDamageThreshold";
+            this.lblDamageThreshold.Size = new System.Drawing.Size(124, 19);
+            this.lblDamageThreshold.TabIndex = 66;
+            this.lblDamageThreshold.Text = "Damage Threshold";
+            // 
+            // damageThresholdTextBox
+            // 
+            this.damageThresholdTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.damageThresholdTextBox.Location = new System.Drawing.Point(349, 243);
+            this.damageThresholdTextBox.Multiline = true;
+            this.damageThresholdTextBox.Name = "damageThresholdTextBox";
+            this.damageThresholdTextBox.PlaceholderText = "0";
+            this.damageThresholdTextBox.ReadOnly = true;
+            this.damageThresholdTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.damageThresholdTextBox.Size = new System.Drawing.Size(70, 23);
+            this.damageThresholdTextBox.TabIndex = 67;
+            this.damageThresholdTextBox.TextChanged += new System.EventHandler(this.damageThresholdTextBox_TextChanged);
+            // 
+            // damageThresholdBonusNumericUpDown
+            // 
+            this.damageThresholdBonusNumericUpDown.Location = new System.Drawing.Point(425, 243);
+            this.damageThresholdBonusNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
+            this.damageThresholdBonusNumericUpDown.Name = "damageThresholdBonusNumericUpDown";
+            this.damageThresholdBonusNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.damageThresholdBonusNumericUpDown.TabIndex = 68;
+            this.damageThresholdBonusNumericUpDown.ValueChanged += new System.EventHandler(this.damageThresholdBonusNumericUpDown_ValueChanged);
+            // 
+            // skillFocusAndTrainingButton
+            // 
+            this.skillFocusAndTrainingButton.Location = new System.Drawing.Point(41, 352);
+            this.skillFocusAndTrainingButton.Name = "skillFocusAndTrainingButton";
+            this.skillFocusAndTrainingButton.Size = new System.Drawing.Size(75, 23);
+            this.skillFocusAndTrainingButton.TabIndex = 69;
+            this.skillFocusAndTrainingButton.Text = "Skills";
+            this.skillFocusAndTrainingButton.UseVisualStyleBackColor = true;
+            this.skillFocusAndTrainingButton.Click += new System.EventHandler(this.skillFocusAndTrainingButton_Click);
+            // 
+            // lblAcrobaticsSkillValue
+            // 
+            this.lblAcrobaticsSkillValue.AutoSize = true;
+            this.lblAcrobaticsSkillValue.Location = new System.Drawing.Point(82, 406);
+            this.lblAcrobaticsSkillValue.Name = "lblAcrobaticsSkillValue";
+            this.lblAcrobaticsSkillValue.Size = new System.Drawing.Size(63, 15);
+            this.lblAcrobaticsSkillValue.TabIndex = 70;
+            this.lblAcrobaticsSkillValue.Text = "Acrobatics";
+            // 
             // CharacterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 955);
+            this.Controls.Add(this.lblAcrobaticsSkillValue);
+            this.Controls.Add(this.skillFocusAndTrainingButton);
+            this.Controls.Add(this.damageThresholdBonusNumericUpDown);
+            this.Controls.Add(this.damageThresholdTextBox);
+            this.Controls.Add(this.lblDamageThreshold);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.allLeveledClassesTextBox);
             this.Controls.Add(this.label2);
@@ -811,6 +874,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.reflexDefenseBonusNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.willDefenseBonusNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bonusHPNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.damageThresholdBonusNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -882,5 +946,10 @@
         private ToolTip toolTip1;
         private TextBox allLeveledClassesTextBox;
         private Label label3;
+        private Label lblDamageThreshold;
+        private TextBox damageThresholdTextBox;
+        private NumericUpDown damageThresholdBonusNumericUpDown;
+        private Button skillFocusAndTrainingButton;
+        private Label lblAcrobaticsSkillValue;
     }
 }

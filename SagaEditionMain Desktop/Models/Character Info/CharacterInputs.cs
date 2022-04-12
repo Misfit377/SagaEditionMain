@@ -19,8 +19,8 @@ namespace SagaEditionMain_Desktop
             CharacterHP = characterHP;
             SelectedSpecies = selectedSpecies;
             CharacterAttributes = characterAttributes;
-            CharacterFocus = new SkillsFocus();
-            CharacterTraining = new SkillsTraining();
+            CharacterFocus = characterFocus;
+            CharacterTraining = characterTraining;
             ConditionTrack = conditionTrack;
             HeroicLevel = heroicLevel;
             FortMiscBonus = fortMiscBonus;

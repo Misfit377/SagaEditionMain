@@ -34,3 +34,4 @@ C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEdit
 C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.pdb
 C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain Desktop.genruntimeconfig.cache
 C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain\SagaEditionMain Desktop\obj\Debug\net6.0-windows\ref\SagaEditionMain Desktop.dll
+C:\Users\doodl\Documents\Visual Studio Projects\SagaEditionMain Desktop\SagaEditionMain\SagaEditionMain Desktop\obj\Debug\net6.0-windows\SagaEditionMain_Desktop.SkillForm.resources

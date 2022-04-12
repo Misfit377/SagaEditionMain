@@ -6,9 +6,10 @@ namespace SagaEditionMain_Desktop
 {
     public partial class CharacterSheet : Form
     {
-        public Species AllSpecies { get; set; }
+        public static CharacterSheet Instance;
+        public Species AllSpecies { get; set; } = new Species();
         public Species.SpeciesBase? SelectedSpecies { get; set; }
-        public CharacterClasses AllClasses { get; set; }
+        public CharacterClasses AllClasses { get; set; } = new CharacterClasses();
         public CharacterClasses.CharacterClassBase? SelectedClass { get; set; }
         public int HeroicLevel { get; set; }
         public CharacterHealth CharacterHP { get; set; }
@@ -16,13 +17,17 @@ namespace SagaEditionMain_Desktop
         public int RefMiscBonus { get; set; }
         public int WillMiscBonus { get; set; }
         public CharacterInfo CharacterInfoSet { get; set; }
+        public SkillsFocus SkillFocuses;
+        public SkillsTraining SkillTrainings;
+        public Skills SkillsList;
         public CharacterSheet()
         {
-            AllSpecies = new Species();
-            AllClasses = new CharacterClasses();
+            //AllSpecies = new Species();
+            //AllClasses = new CharacterClasses();
             SelectedClass = new CharacterClasses.CharacterClassBase();
             CharacterHP = new CharacterHealth(0,0,0,0,0,0);
             InitializeComponent();
+            Instance = this;
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -31,6 +36,7 @@ namespace SagaEditionMain_Desktop
             speciesComboBox.DisplayMember = "Name";
             classListComboBox.DataSource = AllClasses.ClassList;
             classListComboBox.DisplayMember = "Name";
+            
             
         }
 
@@ -52,6 +58,7 @@ namespace SagaEditionMain_Desktop
             CharacterHP.CurrentShieldRating = Convert.ToInt32(currentShieldRatingNumericUpDown.Value);
             CharacterHP.MaxShieldRating = Convert.ToInt32(maxShieldRatingNumericUpDown.Value);
             HeroicLevel = 0;
+            
             foreach (var characterClass in AllClasses.ClassList)
             {
                 HeroicLevel = HeroicLevel + characterClass.Level;
@@ -61,7 +68,7 @@ namespace SagaEditionMain_Desktop
 
             var conditionTrack = new ConditionTrack(Convert.ToInt32(conditionNumericUpDown.Value));
             var characterAttributes = new CharacterAttributes(strScore,dexScore,conScore,intScore,wisScore,chaScore);
-            var skillsFocus = new SkillsFocus();
+            var skillsFocus = SkillFocuses;
             var skillsTraining = new SkillsTraining();
             var characterInputs = new CharacterInputs(SelectedSpecies, characterAttributes, CharacterHP, HeroicLevel, skillsFocus, skillsTraining,conditionTrack, FortMiscBonus, RefMiscBonus, WillMiscBonus);
             CharacterInfoSet = new CharacterInfo(characterInputs);
@@ -74,6 +81,7 @@ namespace SagaEditionMain_Desktop
             fortDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.FortitudeDefense.ToString();
             refDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.ReflexDefense.ToString();
             willDefTextBox.Text = CharacterInfoSet.CharacterDefenses.WillDefense.ToString();
+            lblAcrobaticsSkillValue.Text = CharacterInfoSet.CharacterSkills.AcrobaticsSkill.ToString();
 
         }
 
@@ -146,6 +154,27 @@ namespace SagaEditionMain_Desktop
         private void addClassButton_MouseMove(object sender, MouseEventArgs e)
         {
             toolTip1.SetToolTip(addClassButton, "Click to set the level for a specific class.");
+        }
+
+        private void skillFocusAndTrainingButton_Click(object sender, EventArgs e)
+        {
+            var skillForm = new SkillForm(SkillFocuses, SkillTrainings);
+            skillForm.ShowDialog();
+        }
+
+        private void damageThresholdBonusNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void damageThresholdTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCondition_Click(object sender, EventArgs e)
+        {
+
         }
 
         //private void btnRollDice_Click(object sender, EventArgs e)
