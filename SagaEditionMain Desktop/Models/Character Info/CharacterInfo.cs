@@ -6,7 +6,7 @@ namespace SagaEditionMain_Desktop.Models.Character_Info
     {
         public CharacterAttributes CharacterAttributes;
         public Skills CharacterSkills;
-        public SkillsFocus CharacterFocus;
+        public SkillFocus CharacterFocus;
         public SkillsTraining CharacterTraining;
         public Defenses CharacterDefenses;
         public CharacterAttributeModifiers CharacterAttributeModifiers;

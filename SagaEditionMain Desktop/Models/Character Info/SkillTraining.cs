@@ -33,24 +33,24 @@
             ClimbTraining = false;
             EnduranceTraining = false;
             GatherInformationTraining = false;
-            InitiativeTraining = true;
+            InitiativeTraining = false;
             KnowledgeBureaucracyTraining = false;
             KnowledgeGalacticLoreTraining = false;
             KnowledgeLifeSciencesTraining = false;
             KnowledgePhysicalSciencesTraining = false;
             KnowledgeSocialSciencesTraining = false;
-            KnowledgeTacticsTraining = true;
+            KnowledgeTacticsTraining = false;
             KnowledgeTechnologyTraining = false;
-            MechanicsTraining = true;
-            PerceptionTraining = true;
+            MechanicsTraining = false;
+            PerceptionTraining = false;
             PersuasionTraining = false;
             PilotTraining = false;
             RideTraining = false;
             StealthTraining = false;
             SurvivalTraining = false;
             SwimTraining = false;
-            TreatInjuryTraining = true;
-            UseComputerTraining = true;
+            TreatInjuryTraining = false;
+            UseComputerTraining = false;
             UseForceTraining = false;
         }
     }

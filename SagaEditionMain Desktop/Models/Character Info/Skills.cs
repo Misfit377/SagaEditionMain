@@ -4,6 +4,7 @@ namespace SagaEditionMain_Desktop
 { 
     public class Skills
     {
+        //public List<SkillBase> ListOfSkills;
         public int AcrobaticsSkill;//dex
         public int ClimbSkill;//str
         public int DeceptionSkill;//cha
@@ -33,7 +34,7 @@ namespace SagaEditionMain_Desktop
         {
 
         }
-        public Skills(CharacterAttributeModifiers attributeModifiers, int heroicLevel, SkillsTraining training, SkillsFocus focus)
+        public Skills(CharacterAttributeModifiers attributeModifiers, int heroicLevel, SkillsTraining training, SkillFocus focus)
         {
             AcrobaticsSkill = SetSkillBonuses(heroicLevel, AcrobaticsSkill, attributeModifiers.DexterityModifier, training.AcrobaticsTraining, focus.AcrobaticsFocus);
             ClimbSkill = SetSkillBonuses(heroicLevel, ClimbSkill, attributeModifiers.StrengthModifier, training.ClimbTraining, focus.ClimbFocus);
@@ -76,6 +77,38 @@ namespace SagaEditionMain_Desktop
             }
             return skillBonusTotal;
         }
+        
+        //public Skills(int heroicLevel)
+        //{
+        //    List<SkillBase> skillList = new List<SkillBase>
+        //    {
+        //        new SkillBase
+        //        {
+        //            SkillName = "Acrobatics"
+                    
+        //        }
+        //    };
+        //}
 
+        //public class SkillBase
+        //{
+        //    public string SkillName { get; set; }
+        //    public int AttributeMod { get; set; }
+        //    public int MiscBonus { get; set; }
+        //    public bool Focus { get; set; }
+        //    public bool Training { get; set; }
+
+        //    //int skillBonusTotal = 0;
+        //    //skillBonusTotal = attributeMod + (heroicLevel / 2);
+        //    //if (training == true)
+        //    //{
+        //    //    skillBonusTotal = skillBonusTotal + 5;
+        //    //}
+        //    //if (focus == true)
+        //    //{
+        //    //    skillBonusTotal = skillBonusTotal + 5;
+        //    //}
+        //    //return skillBonusTotal;
+        //}
     }
 }

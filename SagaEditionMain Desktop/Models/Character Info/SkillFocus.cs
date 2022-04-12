@@ -1,6 +1,6 @@
 ﻿namespace SagaEditionMain_Desktop
 {
-    public class SkillsFocus
+    public class SkillFocus
     {
         public bool AcrobaticsFocus;//dex
         public bool ClimbFocus;//str
@@ -27,7 +27,7 @@
         public bool TreatInjuryFocus;//wis
         public bool UseComputerFocus;//int
         public bool UseForceFocus;//cha
-        public SkillsFocus()
+        public SkillFocus()
         {
             AcrobaticsFocus = false;
             ClimbFocus = false;
@@ -44,7 +44,7 @@
             KnowledgeTacticsFocus = false;
             KnowledgeTechnologyFocus = false;
             MechanicsFocus = false;
-            PerceptionFocus = true;
+            PerceptionFocus = false;
             PersuasionFocus = false;
             PilotFocus = false;
             RideFocus = false;

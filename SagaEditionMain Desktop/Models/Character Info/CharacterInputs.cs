@@ -5,7 +5,7 @@ namespace SagaEditionMain_Desktop
     public class CharacterInputs
     {
         public CharacterAttributes CharacterAttributes;
-        public SkillsFocus CharacterFocus;
+        public SkillFocus CharacterFocus;
         public SkillsTraining CharacterTraining;
         public ConditionTrack ConditionTrack;
         public int HeroicLevel;
@@ -14,7 +14,7 @@ namespace SagaEditionMain_Desktop
         public int WillMiscBonus;
         public Species.SpeciesBase? SelectedSpecies;
         public CharacterHealth CharacterHP;
-        public CharacterInputs(Species.SpeciesBase? selectedSpecies, CharacterAttributes characterAttributes, CharacterHealth characterHP, int heroicLevel, SkillsFocus characterFocus, SkillsTraining characterTraining, ConditionTrack conditionTrack, int fortMiscBonus, int refMiscBonus, int willMiscBonus)
+        public CharacterInputs(Species.SpeciesBase? selectedSpecies, CharacterAttributes characterAttributes, CharacterHealth characterHP, int heroicLevel, SkillFocus characterFocus, SkillsTraining characterTraining, ConditionTrack conditionTrack, int fortMiscBonus, int refMiscBonus, int willMiscBonus)
         {
             CharacterHP = characterHP;
             SelectedSpecies = selectedSpecies;

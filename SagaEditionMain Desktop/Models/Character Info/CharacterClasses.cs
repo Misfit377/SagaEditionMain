@@ -7,7 +7,7 @@ namespace SagaEditionMain_Desktop.Models.Character_Info
         public List<CharacterClassBase> ClassList;
         public CharacterClasses()
         {
-            var classList = new List<CharacterClassBase>
+            List<CharacterClassBase> classList = new List<CharacterClassBase>
             {
             // Heroic Classes
                 new CharacterClassBase

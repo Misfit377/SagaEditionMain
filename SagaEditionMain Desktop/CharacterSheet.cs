@@ -6,7 +6,6 @@ namespace SagaEditionMain_Desktop
 {
     public partial class CharacterSheet : Form
     {
-        public static CharacterSheet Instance;
         public Species AllSpecies { get; set; } = new Species();
         public Species.SpeciesBase? SelectedSpecies { get; set; }
         public CharacterClasses AllClasses { get; set; } = new CharacterClasses();
@@ -16,10 +15,10 @@ namespace SagaEditionMain_Desktop
         public int FortMiscBonus { get; set; }
         public int RefMiscBonus { get; set; }
         public int WillMiscBonus { get; set; }
-        public CharacterInfo CharacterInfoSet { get; set; }
-        public SkillsFocus SkillFocuses;
-        public SkillsTraining SkillTrainings;
-        public Skills SkillsList;
+        public CharacterInfo? CharacterInfoSet { get; set; }
+        static SkillFocus? SkillFocuses;
+        static SkillsTraining? SkillTrainings;
+        static Skills? SkillsList;
         public CharacterSheet()
         {
             //AllSpecies = new Species();
@@ -27,11 +26,20 @@ namespace SagaEditionMain_Desktop
             SelectedClass = new CharacterClasses.CharacterClassBase();
             CharacterHP = new CharacterHealth(0,0,0,0,0,0);
             InitializeComponent();
-            Instance = this;
         }
+
+        internal void ReceiveData(SkillFocus skillFocuses, SkillsTraining skillTrainings)
+        {
+            SkillTrainings = skillTrainings;
+            SkillFocuses = skillFocuses;
+            this.UpdateSheet();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            SkillFocuses = new SkillFocus();
+            SkillTrainings = new SkillsTraining();
+            SkillsList = new Skills();
             speciesComboBox.DataSource = AllSpecies.SpeciesList;
             speciesComboBox.DisplayMember = "Name";
             classListComboBox.DataSource = AllClasses.ClassList;
@@ -42,46 +50,7 @@ namespace SagaEditionMain_Desktop
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            int strScore = Convert.ToInt32(strengthScoreNumericUpDown.Value);
-            int dexScore = Convert.ToInt32(dexterityScoreNumericUpDown.Value);
-            int conScore = Convert.ToInt32(constitutionScoreNumericUpDown.Value);
-            int intScore = Convert.ToInt32(intelligenceScoreNumericUpDown.Value);
-            int wisScore = Convert.ToInt32(wisdomScoreNumericUpDown.Value);
-            int chaScore = Convert.ToInt32(charismaScoreNumericUpDown.Value);
-            FortMiscBonus = Convert.ToInt32(fortificationDefenseBonusNumericUpDown.Value);
-            RefMiscBonus = Convert.ToInt32(reflexDefenseBonusNumericUpDown.Value);
-            WillMiscBonus = Convert.ToInt32(willDefenseBonusNumericUpDown.Value);
-            CharacterHP.CurrentHealth = Convert.ToInt32(currentHealthNumericUpDown.Value);
-            CharacterHP.MaxHealth = Convert.ToInt32(maxHealthNumericUpDown.Value);
-            CharacterHP.BonusHealth = Convert.ToInt32(bonusHPNumericUpDown.Value);
-            CharacterHP.DamageReduction = Convert.ToInt32(damageReductionNumericUpDown.Value);
-            CharacterHP.CurrentShieldRating = Convert.ToInt32(currentShieldRatingNumericUpDown.Value);
-            CharacterHP.MaxShieldRating = Convert.ToInt32(maxShieldRatingNumericUpDown.Value);
-            HeroicLevel = 0;
-            
-            foreach (var characterClass in AllClasses.ClassList)
-            {
-                HeroicLevel = HeroicLevel + characterClass.Level;
-            }
-            
-            SelectedSpecies = speciesComboBox.SelectedItem as Species.SpeciesBase;
-
-            var conditionTrack = new ConditionTrack(Convert.ToInt32(conditionNumericUpDown.Value));
-            var characterAttributes = new CharacterAttributes(strScore,dexScore,conScore,intScore,wisScore,chaScore);
-            var skillsFocus = SkillFocuses;
-            var skillsTraining = new SkillsTraining();
-            var characterInputs = new CharacterInputs(SelectedSpecies, characterAttributes, CharacterHP, HeroicLevel, skillsFocus, skillsTraining,conditionTrack, FortMiscBonus, RefMiscBonus, WillMiscBonus);
-            CharacterInfoSet = new CharacterInfo(characterInputs);
-            strengthModifierTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.StrengthModifier.ToString();
-            dexterityModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.DexterityModifier.ToString();
-            constitutionModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.ConstitutionModifier.ToString();
-            intelligenceModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.IntelligenceModifier.ToString();
-            wisdomModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.WisdomModifier.ToString();  
-            charismaModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.CharismaModifier.ToString();
-            fortDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.FortitudeDefense.ToString();
-            refDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.ReflexDefense.ToString();
-            willDefTextBox.Text = CharacterInfoSet.CharacterDefenses.WillDefense.ToString();
-            lblAcrobaticsSkillValue.Text = CharacterInfoSet.CharacterSkills.AcrobaticsSkill.ToString();
+            this.UpdateSheet();
 
         }
 
@@ -92,8 +61,6 @@ namespace SagaEditionMain_Desktop
                 SelectedClass = classListComboBox.SelectedItem as CharacterClasses.CharacterClassBase;
                 classLevelNumericUpDown.Value = SelectedClass.Level;
                 
-                
-
             }
             catch (Exception)
             {
@@ -129,6 +96,7 @@ namespace SagaEditionMain_Desktop
             {
                 throw;
             }
+            this.UpdateSheet();
         }
 
         private void fortificationDefenseBonusNumericUpDown_ValueChanged(object sender, EventArgs e)
@@ -183,5 +151,48 @@ namespace SagaEditionMain_Desktop
         //    int roll = die.roll();
         //    lblDiceRoll.Text = roll.ToString();
         //}
+        internal void UpdateSheet()
+        {
+            int strScore = Convert.ToInt32(strengthScoreNumericUpDown.Value);
+            int dexScore = Convert.ToInt32(dexterityScoreNumericUpDown.Value);
+            int conScore = Convert.ToInt32(constitutionScoreNumericUpDown.Value);
+            int intScore = Convert.ToInt32(intelligenceScoreNumericUpDown.Value);
+            int wisScore = Convert.ToInt32(wisdomScoreNumericUpDown.Value);
+            int chaScore = Convert.ToInt32(charismaScoreNumericUpDown.Value);
+            FortMiscBonus = Convert.ToInt32(fortificationDefenseBonusNumericUpDown.Value);
+            RefMiscBonus = Convert.ToInt32(reflexDefenseBonusNumericUpDown.Value);
+            WillMiscBonus = Convert.ToInt32(willDefenseBonusNumericUpDown.Value);
+            CharacterHP.CurrentHealth = Convert.ToInt32(currentHealthNumericUpDown.Value);
+            CharacterHP.MaxHealth = Convert.ToInt32(maxHealthNumericUpDown.Value);
+            CharacterHP.BonusHealth = Convert.ToInt32(bonusHPNumericUpDown.Value);
+            CharacterHP.DamageReduction = Convert.ToInt32(damageReductionNumericUpDown.Value);
+            CharacterHP.CurrentShieldRating = Convert.ToInt32(currentShieldRatingNumericUpDown.Value);
+            CharacterHP.MaxShieldRating = Convert.ToInt32(maxShieldRatingNumericUpDown.Value);
+            HeroicLevel = 0;
+
+            foreach (var characterClass in AllClasses.ClassList)
+            {
+                HeroicLevel = HeroicLevel + characterClass.Level;
+            }
+
+            SelectedSpecies = speciesComboBox.SelectedItem as Species.SpeciesBase;
+
+            var conditionTrack = new ConditionTrack(Convert.ToInt32(conditionNumericUpDown.Value));
+            var characterAttributes = new CharacterAttributes(strScore, dexScore, conScore, intScore, wisScore, chaScore);
+            //var skillsFocus = SkillFocuses;
+            //var skillsTraining = SkillTrainings;
+            var characterInputs = new CharacterInputs(SelectedSpecies, characterAttributes, CharacterHP, HeroicLevel, SkillFocuses, SkillTrainings, conditionTrack, FortMiscBonus, RefMiscBonus, WillMiscBonus);
+            CharacterInfoSet = new CharacterInfo(characterInputs);
+            strengthModifierTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.StrengthModifier.ToString();
+            dexterityModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.DexterityModifier.ToString();
+            constitutionModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.ConstitutionModifier.ToString();
+            intelligenceModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.IntelligenceModifier.ToString();
+            wisdomModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.WisdomModifier.ToString();
+            charismaModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.CharismaModifier.ToString();
+            fortDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.FortitudeDefense.ToString();
+            refDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.ReflexDefense.ToString();
+            willDefTextBox.Text = CharacterInfoSet.CharacterDefenses.WillDefense.ToString();
+            lblAcrobaticsSkillValue.Text = CharacterInfoSet.CharacterSkills.AcrobaticsSkill.ToString();
+        }
     }
 }
