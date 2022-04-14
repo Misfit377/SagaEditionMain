@@ -168,20 +168,20 @@ namespace SagaEditionMain_Desktop
             CharacterHP.DamageReduction = Convert.ToInt32(damageReductionNumericUpDown.Value);
             CharacterHP.CurrentShieldRating = Convert.ToInt32(currentShieldRatingNumericUpDown.Value);
             CharacterHP.MaxShieldRating = Convert.ToInt32(maxShieldRatingNumericUpDown.Value);
+            //Set Heroic Level
             HeroicLevel = 0;
-
             foreach (var characterClass in AllClasses.ClassList)
             {
                 HeroicLevel = HeroicLevel + characterClass.Level;
             }
-
+            //Show Species
             SelectedSpecies = speciesComboBox.SelectedItem as Species.SpeciesBase;
 
             var conditionTrack = new ConditionTrack(Convert.ToInt32(conditionNumericUpDown.Value));
             var characterAttributes = new CharacterAttributes(strScore, dexScore, conScore, intScore, wisScore, chaScore);
             var characterInputs = new CharacterInputs(SelectedSpecies, characterAttributes, CharacterHP, HeroicLevel, SkillFocuses, SkillTrainings, conditionTrack, FortMiscBonus, RefMiscBonus, WillMiscBonus);
             CharacterInfoSet = new CharacterInfo(characterInputs);
-            //AttributeMods
+            //Show AttributeMods
             strengthModifierTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.StrengthModifier.ToString();
             dexterityModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.DexterityModifier.ToString();
             constitutionModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.ConstitutionModifier.ToString();
@@ -192,7 +192,7 @@ namespace SagaEditionMain_Desktop
             refDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.ReflexDefense.ToString();
             willDefTextBox.Text = CharacterInfoSet.CharacterDefenses.WillDefense.ToString();
 
-            //SkillValues
+            //Show SkillValues
             acrobaticsTextBox.Text = CharacterInfoSet.CharacterSkills.AcrobaticsSkill.ToString();
             climbTextBox.Text = CharacterInfoSet.CharacterSkills.ClimbSkill.ToString();
             deceptionTextBox.Text = CharacterInfoSet.CharacterSkills.DeceptionSkill.ToString();
