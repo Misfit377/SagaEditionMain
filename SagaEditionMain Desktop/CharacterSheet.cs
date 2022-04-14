@@ -179,10 +179,9 @@ namespace SagaEditionMain_Desktop
 
             var conditionTrack = new ConditionTrack(Convert.ToInt32(conditionNumericUpDown.Value));
             var characterAttributes = new CharacterAttributes(strScore, dexScore, conScore, intScore, wisScore, chaScore);
-            //var skillsFocus = SkillFocuses;
-            //var skillsTraining = SkillTrainings;
             var characterInputs = new CharacterInputs(SelectedSpecies, characterAttributes, CharacterHP, HeroicLevel, SkillFocuses, SkillTrainings, conditionTrack, FortMiscBonus, RefMiscBonus, WillMiscBonus);
             CharacterInfoSet = new CharacterInfo(characterInputs);
+            //AttributeMods
             strengthModifierTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.StrengthModifier.ToString();
             dexterityModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.DexterityModifier.ToString();
             constitutionModTextBox.Text = CharacterInfoSet.CharacterAttributeModifiers.ConstitutionModifier.ToString();
@@ -192,7 +191,33 @@ namespace SagaEditionMain_Desktop
             fortDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.FortitudeDefense.ToString();
             refDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.ReflexDefense.ToString();
             willDefTextBox.Text = CharacterInfoSet.CharacterDefenses.WillDefense.ToString();
-            lblAcrobaticsSkillValue.Text = CharacterInfoSet.CharacterSkills.AcrobaticsSkill.ToString();
+
+            //SkillValues
+            acrobaticsTextBox.Text = CharacterInfoSet.CharacterSkills.AcrobaticsSkill.ToString();
+            climbTextBox.Text = CharacterInfoSet.CharacterSkills.ClimbSkill.ToString();
+            deceptionTextBox.Text = CharacterInfoSet.CharacterSkills.DeceptionSkill.ToString();
+            enduranceTextBox.Text = CharacterInfoSet.CharacterSkills.EnduranceSkill.ToString();
+            gatherInformationTextBox.Text = CharacterInfoSet.CharacterSkills.GatherInformationSkill.ToString();
+            initiativeTextBox.Text = CharacterInfoSet.CharacterSkills.InitiativeSkill.ToString();
+            jumpTextBox.Text = CharacterInfoSet.CharacterSkills.JumpSkill.ToString();
+            knowledgeBureaucracyTextBox.Text = CharacterInfoSet.CharacterSkills.KnowledgeBureaucracySkill.ToString();
+            knowledgeGalacticLoreTextBox.Text = CharacterInfoSet.CharacterSkills.KnowledgeGalacticLoreSkill.ToString();
+            knowledgeLifeSciencesTextBox.Text = CharacterInfoSet.CharacterSkills.KnowledgeLifeSciencesSkill.ToString();
+            knowledgePhysicalSciencesTextBox.Text = CharacterInfoSet.CharacterSkills.KnowledgePhysicalSciencesSkill.ToString();
+            knowledgeSocialSciencesTextBox.Text = CharacterInfoSet.CharacterSkills.KnowledgeSocialSciencesSkill.ToString();
+            knowledgeTacticsTextBox.Text = CharacterInfoSet.CharacterSkills.KnowledgeTacticsSkill.ToString();
+            knowledgeTechnologyTextBox.Text = CharacterInfoSet.CharacterSkills.KnowledgeTechnologySkill.ToString();
+            mechanicsTextBox.Text = CharacterInfoSet.CharacterSkills.KnowledgeTechnologySkill.ToString();
+            perceptionTextBox.Text = CharacterInfoSet.CharacterSkills.PerceptionSkill.ToString();
+            persuasionTextBox.Text = CharacterInfoSet.CharacterSkills.PersuasionSkill.ToString();
+            pilotTextBox.Text = CharacterInfoSet.CharacterSkills.PersuasionSkill.ToString();
+            rideTextBox.Text = CharacterInfoSet.CharacterSkills.RideSkill.ToString();
+            stealthTextBox.Text = CharacterInfoSet.CharacterSkills.StealthSkill.ToString();
+            survivalTextBox.Text = CharacterInfoSet.CharacterSkills.SurvivalSkill.ToString();
+            swimTextBox.Text = CharacterInfoSet.CharacterSkills.SwimSkill.ToString();
+            treatInjuryTextBox.Text = CharacterInfoSet.CharacterSkills.TreatInjurySkill.ToString();
+            useComputerTextBox.Text = CharacterInfoSet.CharacterSkills.UseComputerSkill.ToString();
+            useTheForceTextBox.Text = CharacterInfoSet.CharacterSkills.UseForceSkill.ToString();
         }
     }
 }

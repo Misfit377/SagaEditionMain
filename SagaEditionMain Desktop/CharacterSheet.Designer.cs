@@ -97,7 +97,81 @@
             this.damageThresholdTextBox = new System.Windows.Forms.TextBox();
             this.damageThresholdBonusNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.skillFocusAndTrainingButton = new System.Windows.Forms.Button();
-            this.lblAcrobaticsSkillValue = new System.Windows.Forms.Label();
+            this.lblAcrobatics = new System.Windows.Forms.Label();
+            this.acrobaticsTextBox = new System.Windows.Forms.TextBox();
+            this.acrobaticsMiscBonusNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.climbTextBox = new System.Windows.Forms.TextBox();
+            this.deceptionTextBox = new System.Windows.Forms.TextBox();
+            this.enduranceTextBox = new System.Windows.Forms.TextBox();
+            this.gatherInformationTextBox = new System.Windows.Forms.TextBox();
+            this.initiativeTextBox = new System.Windows.Forms.TextBox();
+            this.jumpTextBox = new System.Windows.Forms.TextBox();
+            this.knowledgeBureaucracyTextBox = new System.Windows.Forms.TextBox();
+            this.knowledgeGalacticLoreTextBox = new System.Windows.Forms.TextBox();
+            this.lblClimb = new System.Windows.Forms.Label();
+            this.lblDeception = new System.Windows.Forms.Label();
+            this.lblEndurance = new System.Windows.Forms.Label();
+            this.lblGatherInformation = new System.Windows.Forms.Label();
+            this.lblInitiative = new System.Windows.Forms.Label();
+            this.lblJump = new System.Windows.Forms.Label();
+            this.lblKnowledgeBureaucracy = new System.Windows.Forms.Label();
+            this.lblKnowledgeGalacticLore = new System.Windows.Forms.Label();
+            this.knowledgeLifeSciencesTextBox = new System.Windows.Forms.TextBox();
+            this.knowledgePhysicalSciencesTextBox = new System.Windows.Forms.TextBox();
+            this.knowledgeSocialSciencesTextBox = new System.Windows.Forms.TextBox();
+            this.knowledgeTacticsTextBox = new System.Windows.Forms.TextBox();
+            this.knowledgeTechnologyTextBox = new System.Windows.Forms.TextBox();
+            this.lblKnowledgeLifeSciences = new System.Windows.Forms.Label();
+            this.lblKnowledgePhysicalSciences = new System.Windows.Forms.Label();
+            this.lblKnowledgeSocialSciences = new System.Windows.Forms.Label();
+            this.lblKnowledgeTactics = new System.Windows.Forms.Label();
+            this.lblKnowledgeTechnology = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.lblSurvival = new System.Windows.Forms.Label();
+            this.lblStealth = new System.Windows.Forms.Label();
+            this.lblRide = new System.Windows.Forms.Label();
+            this.lblPilot = new System.Windows.Forms.Label();
+            this.lblPersuasion = new System.Windows.Forms.Label();
+            this.lblPerception = new System.Windows.Forms.Label();
+            this.survivalTextBox = new System.Windows.Forms.TextBox();
+            this.stealthTextBox = new System.Windows.Forms.TextBox();
+            this.rideTextBox = new System.Windows.Forms.TextBox();
+            this.pilotTextBox = new System.Windows.Forms.TextBox();
+            this.persuasionTextBox = new System.Windows.Forms.TextBox();
+            this.perceptionTextBox = new System.Windows.Forms.TextBox();
+            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
+            this.mechanicsTextBox = new System.Windows.Forms.TextBox();
+            this.lblMechanics = new System.Windows.Forms.Label();
+            this.lblUseTheForce = new System.Windows.Forms.Label();
+            this.lblUseComputer = new System.Windows.Forms.Label();
+            this.lblTreatInjury = new System.Windows.Forms.Label();
+            this.lblSwim = new System.Windows.Forms.Label();
+            this.useTheForceTextBox = new System.Windows.Forms.TextBox();
+            this.useComputerTextBox = new System.Windows.Forms.TextBox();
+            this.treatInjuryTextBox = new System.Windows.Forms.TextBox();
+            this.swimTextBox = new System.Windows.Forms.TextBox();
+            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dexterityScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strengthScoreNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.constitutionScoreNumericUpDown)).BeginInit();
@@ -117,6 +191,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.willDefenseBonusNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bonusHPNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.damageThresholdBonusNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acrobaticsMiscBonusNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCharacterName
@@ -184,7 +283,7 @@
             this.strengthModifierTextBox.PlaceholderText = "0";
             this.strengthModifierTextBox.ReadOnly = true;
             this.strengthModifierTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.strengthModifierTextBox.Size = new System.Drawing.Size(70, 23);
+            this.strengthModifierTextBox.Size = new System.Drawing.Size(70, 25);
             this.strengthModifierTextBox.TabIndex = 7;
             // 
             // lblModifier
@@ -199,7 +298,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(713, 920);
+            this.btnSubmit.Location = new System.Drawing.Point(714, 863);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 9;
@@ -226,22 +325,24 @@
             this.dexterityModTextBox.PlaceholderText = "0";
             this.dexterityModTextBox.ReadOnly = true;
             this.dexterityModTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dexterityModTextBox.Size = new System.Drawing.Size(70, 23);
+            this.dexterityModTextBox.Size = new System.Drawing.Size(70, 25);
             this.dexterityModTextBox.TabIndex = 12;
             // 
             // dexterityScoreNumericUpDown
             // 
+            this.dexterityScoreNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dexterityScoreNumericUpDown.Location = new System.Drawing.Point(101, 166);
             this.dexterityScoreNumericUpDown.Name = "dexterityScoreNumericUpDown";
-            this.dexterityScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.dexterityScoreNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.dexterityScoreNumericUpDown.TabIndex = 13;
             // 
             // strengthScoreNumericUpDown
             // 
+            this.strengthScoreNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.strengthScoreNumericUpDown.Location = new System.Drawing.Point(101, 137);
             this.strengthScoreNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.strengthScoreNumericUpDown.Name = "strengthScoreNumericUpDown";
-            this.strengthScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.strengthScoreNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.strengthScoreNumericUpDown.TabIndex = 14;
             // 
             // lblConstitution
@@ -256,9 +357,10 @@
             // 
             // constitutionScoreNumericUpDown
             // 
+            this.constitutionScoreNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.constitutionScoreNumericUpDown.Location = new System.Drawing.Point(101, 195);
             this.constitutionScoreNumericUpDown.Name = "constitutionScoreNumericUpDown";
-            this.constitutionScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.constitutionScoreNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.constitutionScoreNumericUpDown.TabIndex = 16;
             // 
             // constitutionModTextBox
@@ -270,7 +372,7 @@
             this.constitutionModTextBox.PlaceholderText = "0";
             this.constitutionModTextBox.ReadOnly = true;
             this.constitutionModTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.constitutionModTextBox.Size = new System.Drawing.Size(70, 23);
+            this.constitutionModTextBox.Size = new System.Drawing.Size(70, 25);
             this.constitutionModTextBox.TabIndex = 17;
             // 
             // lblCharisma
@@ -305,23 +407,26 @@
             // 
             // intelligenceScoreNumericUpDown
             // 
+            this.intelligenceScoreNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.intelligenceScoreNumericUpDown.Location = new System.Drawing.Point(101, 224);
             this.intelligenceScoreNumericUpDown.Name = "intelligenceScoreNumericUpDown";
-            this.intelligenceScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.intelligenceScoreNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.intelligenceScoreNumericUpDown.TabIndex = 21;
             // 
             // wisdomScoreNumericUpDown
             // 
+            this.wisdomScoreNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wisdomScoreNumericUpDown.Location = new System.Drawing.Point(101, 253);
             this.wisdomScoreNumericUpDown.Name = "wisdomScoreNumericUpDown";
-            this.wisdomScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.wisdomScoreNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.wisdomScoreNumericUpDown.TabIndex = 22;
             // 
             // charismaScoreNumericUpDown
             // 
+            this.charismaScoreNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.charismaScoreNumericUpDown.Location = new System.Drawing.Point(101, 282);
             this.charismaScoreNumericUpDown.Name = "charismaScoreNumericUpDown";
-            this.charismaScoreNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.charismaScoreNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.charismaScoreNumericUpDown.TabIndex = 23;
             // 
             // intelligenceModTextBox
@@ -333,7 +438,7 @@
             this.intelligenceModTextBox.PlaceholderText = "0";
             this.intelligenceModTextBox.ReadOnly = true;
             this.intelligenceModTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.intelligenceModTextBox.Size = new System.Drawing.Size(70, 23);
+            this.intelligenceModTextBox.Size = new System.Drawing.Size(70, 25);
             this.intelligenceModTextBox.TabIndex = 24;
             // 
             // wisdomModTextBox
@@ -345,7 +450,7 @@
             this.wisdomModTextBox.PlaceholderText = "0";
             this.wisdomModTextBox.ReadOnly = true;
             this.wisdomModTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wisdomModTextBox.Size = new System.Drawing.Size(70, 23);
+            this.wisdomModTextBox.Size = new System.Drawing.Size(70, 25);
             this.wisdomModTextBox.TabIndex = 25;
             // 
             // charismaModTextBox
@@ -357,7 +462,7 @@
             this.charismaModTextBox.PlaceholderText = "0";
             this.charismaModTextBox.ReadOnly = true;
             this.charismaModTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.charismaModTextBox.Size = new System.Drawing.Size(70, 23);
+            this.charismaModTextBox.Size = new System.Drawing.Size(70, 25);
             this.charismaModTextBox.TabIndex = 26;
             // 
             // lblDefenses
@@ -392,6 +497,7 @@
             // 
             // conditionNumericUpDown
             // 
+            this.conditionNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.conditionNumericUpDown.Location = new System.Drawing.Point(383, 291);
             this.conditionNumericUpDown.Maximum = new decimal(new int[] {
             0,
@@ -405,7 +511,7 @@
             -2147483648});
             this.conditionNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.conditionNumericUpDown.Name = "conditionNumericUpDown";
-            this.conditionNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.conditionNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.conditionNumericUpDown.TabIndex = 30;
             // 
             // lblCondition
@@ -428,7 +534,7 @@
             this.fortDefenseTextBox.PlaceholderText = "0";
             this.fortDefenseTextBox.ReadOnly = true;
             this.fortDefenseTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fortDefenseTextBox.Size = new System.Drawing.Size(70, 23);
+            this.fortDefenseTextBox.Size = new System.Drawing.Size(70, 25);
             this.fortDefenseTextBox.TabIndex = 32;
             // 
             // refDefenseTextBox
@@ -440,7 +546,7 @@
             this.refDefenseTextBox.PlaceholderText = "0";
             this.refDefenseTextBox.ReadOnly = true;
             this.refDefenseTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.refDefenseTextBox.Size = new System.Drawing.Size(70, 23);
+            this.refDefenseTextBox.Size = new System.Drawing.Size(70, 25);
             this.refDefenseTextBox.TabIndex = 33;
             // 
             // willDefTextBox
@@ -452,7 +558,7 @@
             this.willDefTextBox.PlaceholderText = "0";
             this.willDefTextBox.ReadOnly = true;
             this.willDefTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.willDefTextBox.Size = new System.Drawing.Size(70, 23);
+            this.willDefTextBox.Size = new System.Drawing.Size(70, 25);
             this.willDefTextBox.TabIndex = 34;
             // 
             // lblFortDefense
@@ -490,7 +596,7 @@
             this.lblDefensesDivider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblDefensesDivider.Location = new System.Drawing.Point(12, 104);
             this.lblDefensesDivider.Name = "lblDefensesDivider";
-            this.lblDefensesDivider.Size = new System.Drawing.Size(780, 2);
+            this.lblDefensesDivider.Size = new System.Drawing.Size(1240, 2);
             this.lblDefensesDivider.TabIndex = 38;
             // 
             // speciesComboBox
@@ -562,17 +668,18 @@
             // lblSkillDivider
             // 
             this.lblSkillDivider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblSkillDivider.Location = new System.Drawing.Point(8, 329);
+            this.lblSkillDivider.Location = new System.Drawing.Point(10, 328);
             this.lblSkillDivider.Name = "lblSkillDivider";
-            this.lblSkillDivider.Size = new System.Drawing.Size(780, 2);
+            this.lblSkillDivider.Size = new System.Drawing.Size(1240, 2);
             this.lblSkillDivider.TabIndex = 46;
             // 
             // currentHealthNumericUpDown
             // 
+            this.currentHealthNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.currentHealthNumericUpDown.Location = new System.Drawing.Point(521, 137);
             this.currentHealthNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.currentHealthNumericUpDown.Name = "currentHealthNumericUpDown";
-            this.currentHealthNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.currentHealthNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.currentHealthNumericUpDown.TabIndex = 48;
             // 
             // lblCurrentHealth
@@ -607,10 +714,11 @@
             // 
             // damageReductionNumericUpDown
             // 
+            this.damageReductionNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.damageReductionNumericUpDown.Location = new System.Drawing.Point(521, 195);
             this.damageReductionNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.damageReductionNumericUpDown.Name = "damageReductionNumericUpDown";
-            this.damageReductionNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.damageReductionNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.damageReductionNumericUpDown.TabIndex = 52;
             // 
             // lblCurrentShieldRating
@@ -625,26 +733,29 @@
             // 
             // currentShieldRatingNumericUpDown
             // 
+            this.currentShieldRatingNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.currentShieldRatingNumericUpDown.Location = new System.Drawing.Point(597, 195);
             this.currentShieldRatingNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.currentShieldRatingNumericUpDown.Name = "currentShieldRatingNumericUpDown";
-            this.currentShieldRatingNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.currentShieldRatingNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.currentShieldRatingNumericUpDown.TabIndex = 54;
             // 
             // maxHealthNumericUpDown
             // 
+            this.maxHealthNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.maxHealthNumericUpDown.Location = new System.Drawing.Point(597, 137);
             this.maxHealthNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.maxHealthNumericUpDown.Name = "maxHealthNumericUpDown";
-            this.maxHealthNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.maxHealthNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.maxHealthNumericUpDown.TabIndex = 55;
             // 
             // maxShieldRatingNumericUpDown
             // 
+            this.maxShieldRatingNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.maxShieldRatingNumericUpDown.Location = new System.Drawing.Point(673, 195);
             this.maxShieldRatingNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.maxShieldRatingNumericUpDown.Name = "maxShieldRatingNumericUpDown";
-            this.maxShieldRatingNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.maxShieldRatingNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.maxShieldRatingNumericUpDown.TabIndex = 56;
             // 
             // lblMaxShieldRating
@@ -659,28 +770,31 @@
             // 
             // fortificationDefenseBonusNumericUpDown
             // 
+            this.fortificationDefenseBonusNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fortificationDefenseBonusNumericUpDown.Location = new System.Drawing.Point(425, 137);
             this.fortificationDefenseBonusNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.fortificationDefenseBonusNumericUpDown.Name = "fortificationDefenseBonusNumericUpDown";
-            this.fortificationDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.fortificationDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.fortificationDefenseBonusNumericUpDown.TabIndex = 58;
             this.fortificationDefenseBonusNumericUpDown.ValueChanged += new System.EventHandler(this.fortificationDefenseBonusNumericUpDown_ValueChanged);
             // 
             // reflexDefenseBonusNumericUpDown
             // 
+            this.reflexDefenseBonusNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reflexDefenseBonusNumericUpDown.Location = new System.Drawing.Point(425, 166);
             this.reflexDefenseBonusNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.reflexDefenseBonusNumericUpDown.Name = "reflexDefenseBonusNumericUpDown";
-            this.reflexDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.reflexDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.reflexDefenseBonusNumericUpDown.TabIndex = 59;
             this.reflexDefenseBonusNumericUpDown.ValueChanged += new System.EventHandler(this.reflexDefenseBonusNumericUpDown_ValueChanged);
             // 
             // willDefenseBonusNumericUpDown
             // 
+            this.willDefenseBonusNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.willDefenseBonusNumericUpDown.Location = new System.Drawing.Point(425, 195);
             this.willDefenseBonusNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.willDefenseBonusNumericUpDown.Name = "willDefenseBonusNumericUpDown";
-            this.willDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.willDefenseBonusNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.willDefenseBonusNumericUpDown.TabIndex = 60;
             this.willDefenseBonusNumericUpDown.ValueChanged += new System.EventHandler(this.willDefenseBonusNumericUpDown_ValueChanged);
             // 
@@ -696,10 +810,11 @@
             // 
             // bonusHPNumericUpDown
             // 
+            this.bonusHPNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bonusHPNumericUpDown.Location = new System.Drawing.Point(673, 137);
             this.bonusHPNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.bonusHPNumericUpDown.Name = "bonusHPNumericUpDown";
-            this.bonusHPNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.bonusHPNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.bonusHPNumericUpDown.TabIndex = 62;
             // 
             // label2
@@ -748,22 +863,23 @@
             this.damageThresholdTextBox.PlaceholderText = "0";
             this.damageThresholdTextBox.ReadOnly = true;
             this.damageThresholdTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.damageThresholdTextBox.Size = new System.Drawing.Size(70, 23);
+            this.damageThresholdTextBox.Size = new System.Drawing.Size(70, 25);
             this.damageThresholdTextBox.TabIndex = 67;
             this.damageThresholdTextBox.TextChanged += new System.EventHandler(this.damageThresholdTextBox_TextChanged);
             // 
             // damageThresholdBonusNumericUpDown
             // 
+            this.damageThresholdBonusNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.damageThresholdBonusNumericUpDown.Location = new System.Drawing.Point(425, 243);
             this.damageThresholdBonusNumericUpDown.MinimumSize = new System.Drawing.Size(70, 0);
             this.damageThresholdBonusNumericUpDown.Name = "damageThresholdBonusNumericUpDown";
-            this.damageThresholdBonusNumericUpDown.Size = new System.Drawing.Size(70, 23);
+            this.damageThresholdBonusNumericUpDown.Size = new System.Drawing.Size(70, 25);
             this.damageThresholdBonusNumericUpDown.TabIndex = 68;
             this.damageThresholdBonusNumericUpDown.ValueChanged += new System.EventHandler(this.damageThresholdBonusNumericUpDown_ValueChanged);
             // 
             // skillFocusAndTrainingButton
             // 
-            this.skillFocusAndTrainingButton.Location = new System.Drawing.Point(41, 352);
+            this.skillFocusAndTrainingButton.Location = new System.Drawing.Point(152, 353);
             this.skillFocusAndTrainingButton.Name = "skillFocusAndTrainingButton";
             this.skillFocusAndTrainingButton.Size = new System.Drawing.Size(75, 23);
             this.skillFocusAndTrainingButton.TabIndex = 69;
@@ -771,21 +887,811 @@
             this.skillFocusAndTrainingButton.UseVisualStyleBackColor = true;
             this.skillFocusAndTrainingButton.Click += new System.EventHandler(this.skillFocusAndTrainingButton_Click);
             // 
-            // lblAcrobaticsSkillValue
+            // lblAcrobatics
             // 
-            this.lblAcrobaticsSkillValue.AutoSize = true;
-            this.lblAcrobaticsSkillValue.Location = new System.Drawing.Point(82, 406);
-            this.lblAcrobaticsSkillValue.Name = "lblAcrobaticsSkillValue";
-            this.lblAcrobaticsSkillValue.Size = new System.Drawing.Size(63, 15);
-            this.lblAcrobaticsSkillValue.TabIndex = 70;
-            this.lblAcrobaticsSkillValue.Text = "Acrobatics";
+            this.lblAcrobatics.AutoSize = true;
+            this.lblAcrobatics.Location = new System.Drawing.Point(57, 405);
+            this.lblAcrobatics.Name = "lblAcrobatics";
+            this.lblAcrobatics.Size = new System.Drawing.Size(63, 15);
+            this.lblAcrobatics.TabIndex = 70;
+            this.lblAcrobatics.Text = "Acrobatics";
+            // 
+            // acrobaticsTextBox
+            // 
+            this.acrobaticsTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.acrobaticsTextBox.Location = new System.Drawing.Point(126, 400);
+            this.acrobaticsTextBox.Multiline = true;
+            this.acrobaticsTextBox.Name = "acrobaticsTextBox";
+            this.acrobaticsTextBox.PlaceholderText = "0";
+            this.acrobaticsTextBox.ReadOnly = true;
+            this.acrobaticsTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.acrobaticsTextBox.Size = new System.Drawing.Size(60, 25);
+            this.acrobaticsTextBox.TabIndex = 71;
+            // 
+            // acrobaticsMiscBonusNumericUpDown
+            // 
+            this.acrobaticsMiscBonusNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.acrobaticsMiscBonusNumericUpDown.Location = new System.Drawing.Point(192, 400);
+            this.acrobaticsMiscBonusNumericUpDown.Name = "acrobaticsMiscBonusNumericUpDown";
+            this.acrobaticsMiscBonusNumericUpDown.Size = new System.Drawing.Size(60, 25);
+            this.acrobaticsMiscBonusNumericUpDown.TabIndex = 72;
+            // 
+            // climbTextBox
+            // 
+            this.climbTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.climbTextBox.Location = new System.Drawing.Point(126, 431);
+            this.climbTextBox.Multiline = true;
+            this.climbTextBox.Name = "climbTextBox";
+            this.climbTextBox.PlaceholderText = "0";
+            this.climbTextBox.ReadOnly = true;
+            this.climbTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.climbTextBox.Size = new System.Drawing.Size(60, 25);
+            this.climbTextBox.TabIndex = 73;
+            // 
+            // deceptionTextBox
+            // 
+            this.deceptionTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.deceptionTextBox.Location = new System.Drawing.Point(126, 462);
+            this.deceptionTextBox.Multiline = true;
+            this.deceptionTextBox.Name = "deceptionTextBox";
+            this.deceptionTextBox.PlaceholderText = "0";
+            this.deceptionTextBox.ReadOnly = true;
+            this.deceptionTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.deceptionTextBox.Size = new System.Drawing.Size(60, 25);
+            this.deceptionTextBox.TabIndex = 74;
+            // 
+            // enduranceTextBox
+            // 
+            this.enduranceTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.enduranceTextBox.Location = new System.Drawing.Point(126, 493);
+            this.enduranceTextBox.Multiline = true;
+            this.enduranceTextBox.Name = "enduranceTextBox";
+            this.enduranceTextBox.PlaceholderText = "0";
+            this.enduranceTextBox.ReadOnly = true;
+            this.enduranceTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.enduranceTextBox.Size = new System.Drawing.Size(60, 25);
+            this.enduranceTextBox.TabIndex = 75;
+            // 
+            // gatherInformationTextBox
+            // 
+            this.gatherInformationTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gatherInformationTextBox.Location = new System.Drawing.Point(126, 524);
+            this.gatherInformationTextBox.Multiline = true;
+            this.gatherInformationTextBox.Name = "gatherInformationTextBox";
+            this.gatherInformationTextBox.PlaceholderText = "0";
+            this.gatherInformationTextBox.ReadOnly = true;
+            this.gatherInformationTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gatherInformationTextBox.Size = new System.Drawing.Size(60, 25);
+            this.gatherInformationTextBox.TabIndex = 76;
+            // 
+            // initiativeTextBox
+            // 
+            this.initiativeTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.initiativeTextBox.Location = new System.Drawing.Point(126, 555);
+            this.initiativeTextBox.Multiline = true;
+            this.initiativeTextBox.Name = "initiativeTextBox";
+            this.initiativeTextBox.PlaceholderText = "0";
+            this.initiativeTextBox.ReadOnly = true;
+            this.initiativeTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.initiativeTextBox.Size = new System.Drawing.Size(60, 25);
+            this.initiativeTextBox.TabIndex = 77;
+            // 
+            // jumpTextBox
+            // 
+            this.jumpTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.jumpTextBox.Location = new System.Drawing.Point(126, 586);
+            this.jumpTextBox.Multiline = true;
+            this.jumpTextBox.Name = "jumpTextBox";
+            this.jumpTextBox.PlaceholderText = "0";
+            this.jumpTextBox.ReadOnly = true;
+            this.jumpTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.jumpTextBox.Size = new System.Drawing.Size(60, 25);
+            this.jumpTextBox.TabIndex = 78;
+            // 
+            // knowledgeBureaucracyTextBox
+            // 
+            this.knowledgeBureaucracyTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.knowledgeBureaucracyTextBox.Location = new System.Drawing.Point(424, 400);
+            this.knowledgeBureaucracyTextBox.Multiline = true;
+            this.knowledgeBureaucracyTextBox.Name = "knowledgeBureaucracyTextBox";
+            this.knowledgeBureaucracyTextBox.PlaceholderText = "0";
+            this.knowledgeBureaucracyTextBox.ReadOnly = true;
+            this.knowledgeBureaucracyTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.knowledgeBureaucracyTextBox.Size = new System.Drawing.Size(60, 25);
+            this.knowledgeBureaucracyTextBox.TabIndex = 79;
+            // 
+            // knowledgeGalacticLoreTextBox
+            // 
+            this.knowledgeGalacticLoreTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.knowledgeGalacticLoreTextBox.Location = new System.Drawing.Point(424, 431);
+            this.knowledgeGalacticLoreTextBox.Multiline = true;
+            this.knowledgeGalacticLoreTextBox.Name = "knowledgeGalacticLoreTextBox";
+            this.knowledgeGalacticLoreTextBox.PlaceholderText = "0";
+            this.knowledgeGalacticLoreTextBox.ReadOnly = true;
+            this.knowledgeGalacticLoreTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.knowledgeGalacticLoreTextBox.Size = new System.Drawing.Size(60, 25);
+            this.knowledgeGalacticLoreTextBox.TabIndex = 80;
+            // 
+            // lblClimb
+            // 
+            this.lblClimb.AutoSize = true;
+            this.lblClimb.Location = new System.Drawing.Point(81, 436);
+            this.lblClimb.Name = "lblClimb";
+            this.lblClimb.Size = new System.Drawing.Size(39, 15);
+            this.lblClimb.TabIndex = 81;
+            this.lblClimb.Text = "Climb";
+            // 
+            // lblDeception
+            // 
+            this.lblDeception.AutoSize = true;
+            this.lblDeception.Location = new System.Drawing.Point(59, 467);
+            this.lblDeception.Name = "lblDeception";
+            this.lblDeception.Size = new System.Drawing.Size(61, 15);
+            this.lblDeception.TabIndex = 82;
+            this.lblDeception.Text = "Deception";
+            // 
+            // lblEndurance
+            // 
+            this.lblEndurance.AutoSize = true;
+            this.lblEndurance.Location = new System.Drawing.Point(57, 498);
+            this.lblEndurance.Name = "lblEndurance";
+            this.lblEndurance.Size = new System.Drawing.Size(63, 15);
+            this.lblEndurance.TabIndex = 83;
+            this.lblEndurance.Text = "Endurance";
+            // 
+            // lblGatherInformation
+            // 
+            this.lblGatherInformation.AutoSize = true;
+            this.lblGatherInformation.Location = new System.Drawing.Point(12, 529);
+            this.lblGatherInformation.Name = "lblGatherInformation";
+            this.lblGatherInformation.Size = new System.Drawing.Size(108, 15);
+            this.lblGatherInformation.TabIndex = 84;
+            this.lblGatherInformation.Text = "Gather Information";
+            // 
+            // lblInitiative
+            // 
+            this.lblInitiative.AutoSize = true;
+            this.lblInitiative.Location = new System.Drawing.Point(68, 560);
+            this.lblInitiative.Name = "lblInitiative";
+            this.lblInitiative.Size = new System.Drawing.Size(52, 15);
+            this.lblInitiative.TabIndex = 85;
+            this.lblInitiative.Text = "Initiative";
+            // 
+            // lblJump
+            // 
+            this.lblJump.AutoSize = true;
+            this.lblJump.Location = new System.Drawing.Point(84, 591);
+            this.lblJump.Name = "lblJump";
+            this.lblJump.Size = new System.Drawing.Size(36, 15);
+            this.lblJump.TabIndex = 86;
+            this.lblJump.Text = "Jump";
+            // 
+            // lblKnowledgeBureaucracy
+            // 
+            this.lblKnowledgeBureaucracy.AutoSize = true;
+            this.lblKnowledgeBureaucracy.Location = new System.Drawing.Point(285, 405);
+            this.lblKnowledgeBureaucracy.Name = "lblKnowledgeBureaucracy";
+            this.lblKnowledgeBureaucracy.Size = new System.Drawing.Size(134, 15);
+            this.lblKnowledgeBureaucracy.TabIndex = 87;
+            this.lblKnowledgeBureaucracy.Text = "Knowledge Bureaucracy";
+            // 
+            // lblKnowledgeGalacticLore
+            // 
+            this.lblKnowledgeGalacticLore.AutoSize = true;
+            this.lblKnowledgeGalacticLore.Location = new System.Drawing.Point(281, 436);
+            this.lblKnowledgeGalacticLore.Name = "lblKnowledgeGalacticLore";
+            this.lblKnowledgeGalacticLore.Size = new System.Drawing.Size(137, 15);
+            this.lblKnowledgeGalacticLore.TabIndex = 88;
+            this.lblKnowledgeGalacticLore.Text = "Knowledge Galactic Lore";
+            // 
+            // knowledgeLifeSciencesTextBox
+            // 
+            this.knowledgeLifeSciencesTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.knowledgeLifeSciencesTextBox.Location = new System.Drawing.Point(424, 462);
+            this.knowledgeLifeSciencesTextBox.Multiline = true;
+            this.knowledgeLifeSciencesTextBox.Name = "knowledgeLifeSciencesTextBox";
+            this.knowledgeLifeSciencesTextBox.PlaceholderText = "0";
+            this.knowledgeLifeSciencesTextBox.ReadOnly = true;
+            this.knowledgeLifeSciencesTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.knowledgeLifeSciencesTextBox.Size = new System.Drawing.Size(60, 25);
+            this.knowledgeLifeSciencesTextBox.TabIndex = 89;
+            // 
+            // knowledgePhysicalSciencesTextBox
+            // 
+            this.knowledgePhysicalSciencesTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.knowledgePhysicalSciencesTextBox.Location = new System.Drawing.Point(424, 493);
+            this.knowledgePhysicalSciencesTextBox.Multiline = true;
+            this.knowledgePhysicalSciencesTextBox.Name = "knowledgePhysicalSciencesTextBox";
+            this.knowledgePhysicalSciencesTextBox.PlaceholderText = "0";
+            this.knowledgePhysicalSciencesTextBox.ReadOnly = true;
+            this.knowledgePhysicalSciencesTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.knowledgePhysicalSciencesTextBox.Size = new System.Drawing.Size(60, 25);
+            this.knowledgePhysicalSciencesTextBox.TabIndex = 90;
+            // 
+            // knowledgeSocialSciencesTextBox
+            // 
+            this.knowledgeSocialSciencesTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.knowledgeSocialSciencesTextBox.Location = new System.Drawing.Point(424, 524);
+            this.knowledgeSocialSciencesTextBox.Multiline = true;
+            this.knowledgeSocialSciencesTextBox.Name = "knowledgeSocialSciencesTextBox";
+            this.knowledgeSocialSciencesTextBox.PlaceholderText = "0";
+            this.knowledgeSocialSciencesTextBox.ReadOnly = true;
+            this.knowledgeSocialSciencesTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.knowledgeSocialSciencesTextBox.Size = new System.Drawing.Size(60, 25);
+            this.knowledgeSocialSciencesTextBox.TabIndex = 91;
+            // 
+            // knowledgeTacticsTextBox
+            // 
+            this.knowledgeTacticsTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.knowledgeTacticsTextBox.Location = new System.Drawing.Point(424, 555);
+            this.knowledgeTacticsTextBox.Multiline = true;
+            this.knowledgeTacticsTextBox.Name = "knowledgeTacticsTextBox";
+            this.knowledgeTacticsTextBox.PlaceholderText = "0";
+            this.knowledgeTacticsTextBox.ReadOnly = true;
+            this.knowledgeTacticsTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.knowledgeTacticsTextBox.Size = new System.Drawing.Size(60, 25);
+            this.knowledgeTacticsTextBox.TabIndex = 92;
+            // 
+            // knowledgeTechnologyTextBox
+            // 
+            this.knowledgeTechnologyTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.knowledgeTechnologyTextBox.Location = new System.Drawing.Point(424, 586);
+            this.knowledgeTechnologyTextBox.Multiline = true;
+            this.knowledgeTechnologyTextBox.Name = "knowledgeTechnologyTextBox";
+            this.knowledgeTechnologyTextBox.PlaceholderText = "0";
+            this.knowledgeTechnologyTextBox.ReadOnly = true;
+            this.knowledgeTechnologyTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.knowledgeTechnologyTextBox.Size = new System.Drawing.Size(60, 25);
+            this.knowledgeTechnologyTextBox.TabIndex = 93;
+            // 
+            // lblKnowledgeLifeSciences
+            // 
+            this.lblKnowledgeLifeSciences.AutoSize = true;
+            this.lblKnowledgeLifeSciences.Location = new System.Drawing.Point(284, 467);
+            this.lblKnowledgeLifeSciences.Name = "lblKnowledgeLifeSciences";
+            this.lblKnowledgeLifeSciences.Size = new System.Drawing.Size(136, 15);
+            this.lblKnowledgeLifeSciences.TabIndex = 94;
+            this.lblKnowledgeLifeSciences.Text = "Knowledge Life Sciences";
+            // 
+            // lblKnowledgePhysicalSciences
+            // 
+            this.lblKnowledgePhysicalSciences.AutoSize = true;
+            this.lblKnowledgePhysicalSciences.Location = new System.Drawing.Point(258, 498);
+            this.lblKnowledgePhysicalSciences.Name = "lblKnowledgePhysicalSciences";
+            this.lblKnowledgePhysicalSciences.Size = new System.Drawing.Size(160, 15);
+            this.lblKnowledgePhysicalSciences.TabIndex = 95;
+            this.lblKnowledgePhysicalSciences.Text = "Knowledge Physical Sciences";
+            // 
+            // lblKnowledgeSocialSciences
+            // 
+            this.lblKnowledgeSocialSciences.AutoSize = true;
+            this.lblKnowledgeSocialSciences.Location = new System.Drawing.Point(270, 529);
+            this.lblKnowledgeSocialSciences.Name = "lblKnowledgeSocialSciences";
+            this.lblKnowledgeSocialSciences.Size = new System.Drawing.Size(148, 15);
+            this.lblKnowledgeSocialSciences.TabIndex = 96;
+            this.lblKnowledgeSocialSciences.Text = "Knowledge Social Sciences";
+            // 
+            // lblKnowledgeTactics
+            // 
+            this.lblKnowledgeTactics.AutoSize = true;
+            this.lblKnowledgeTactics.Location = new System.Drawing.Point(314, 560);
+            this.lblKnowledgeTactics.Name = "lblKnowledgeTactics";
+            this.lblKnowledgeTactics.Size = new System.Drawing.Size(104, 15);
+            this.lblKnowledgeTactics.TabIndex = 97;
+            this.lblKnowledgeTactics.Text = "Knowledge Tactics";
+            // 
+            // lblKnowledgeTechnology
+            // 
+            this.lblKnowledgeTechnology.AutoSize = true;
+            this.lblKnowledgeTechnology.Location = new System.Drawing.Point(288, 591);
+            this.lblKnowledgeTechnology.Name = "lblKnowledgeTechnology";
+            this.lblKnowledgeTechnology.Size = new System.Drawing.Size(130, 15);
+            this.lblKnowledgeTechnology.TabIndex = 98;
+            this.lblKnowledgeTechnology.Text = "Knowledge Technology";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown1.Location = new System.Drawing.Point(192, 431);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown1.TabIndex = 99;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown2.Location = new System.Drawing.Point(192, 462);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown2.TabIndex = 100;
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown3.Location = new System.Drawing.Point(192, 493);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown3.TabIndex = 101;
+            // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown4.Location = new System.Drawing.Point(192, 524);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown4.TabIndex = 102;
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown5.Location = new System.Drawing.Point(192, 555);
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown5.TabIndex = 103;
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown6.Location = new System.Drawing.Point(192, 586);
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown6.TabIndex = 104;
+            // 
+            // numericUpDown7
+            // 
+            this.numericUpDown7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown7.Location = new System.Drawing.Point(490, 586);
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown7.TabIndex = 111;
+            // 
+            // numericUpDown8
+            // 
+            this.numericUpDown8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown8.Location = new System.Drawing.Point(490, 555);
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown8.TabIndex = 110;
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown9.Location = new System.Drawing.Point(490, 524);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown9.TabIndex = 109;
+            // 
+            // numericUpDown10
+            // 
+            this.numericUpDown10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown10.Location = new System.Drawing.Point(490, 493);
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown10.TabIndex = 108;
+            // 
+            // numericUpDown11
+            // 
+            this.numericUpDown11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown11.Location = new System.Drawing.Point(490, 462);
+            this.numericUpDown11.Name = "numericUpDown11";
+            this.numericUpDown11.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown11.TabIndex = 107;
+            // 
+            // numericUpDown12
+            // 
+            this.numericUpDown12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown12.Location = new System.Drawing.Point(490, 431);
+            this.numericUpDown12.Name = "numericUpDown12";
+            this.numericUpDown12.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown12.TabIndex = 106;
+            // 
+            // numericUpDown13
+            // 
+            this.numericUpDown13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown13.Location = new System.Drawing.Point(490, 400);
+            this.numericUpDown13.Name = "numericUpDown13";
+            this.numericUpDown13.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown13.TabIndex = 105;
+            // 
+            // numericUpDown14
+            // 
+            this.numericUpDown14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown14.Location = new System.Drawing.Point(692, 585);
+            this.numericUpDown14.Name = "numericUpDown14";
+            this.numericUpDown14.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown14.TabIndex = 132;
+            // 
+            // numericUpDown15
+            // 
+            this.numericUpDown15.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown15.Location = new System.Drawing.Point(692, 554);
+            this.numericUpDown15.Name = "numericUpDown15";
+            this.numericUpDown15.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown15.TabIndex = 131;
+            // 
+            // numericUpDown16
+            // 
+            this.numericUpDown16.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown16.Location = new System.Drawing.Point(692, 523);
+            this.numericUpDown16.Name = "numericUpDown16";
+            this.numericUpDown16.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown16.TabIndex = 130;
+            // 
+            // numericUpDown17
+            // 
+            this.numericUpDown17.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown17.Location = new System.Drawing.Point(692, 492);
+            this.numericUpDown17.Name = "numericUpDown17";
+            this.numericUpDown17.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown17.TabIndex = 129;
+            // 
+            // numericUpDown18
+            // 
+            this.numericUpDown18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown18.Location = new System.Drawing.Point(692, 461);
+            this.numericUpDown18.Name = "numericUpDown18";
+            this.numericUpDown18.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown18.TabIndex = 128;
+            // 
+            // numericUpDown19
+            // 
+            this.numericUpDown19.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown19.Location = new System.Drawing.Point(692, 430);
+            this.numericUpDown19.Name = "numericUpDown19";
+            this.numericUpDown19.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown19.TabIndex = 127;
+            // 
+            // lblSurvival
+            // 
+            this.lblSurvival.AutoSize = true;
+            this.lblSurvival.Location = new System.Drawing.Point(572, 590);
+            this.lblSurvival.Name = "lblSurvival";
+            this.lblSurvival.Size = new System.Drawing.Size(48, 15);
+            this.lblSurvival.TabIndex = 126;
+            this.lblSurvival.Text = "Survival";
+            // 
+            // lblStealth
+            // 
+            this.lblStealth.AutoSize = true;
+            this.lblStealth.Location = new System.Drawing.Point(577, 559);
+            this.lblStealth.Name = "lblStealth";
+            this.lblStealth.Size = new System.Drawing.Size(43, 15);
+            this.lblStealth.TabIndex = 125;
+            this.lblStealth.Text = "Stealth";
+            // 
+            // lblRide
+            // 
+            this.lblRide.AutoSize = true;
+            this.lblRide.Location = new System.Drawing.Point(590, 528);
+            this.lblRide.Name = "lblRide";
+            this.lblRide.Size = new System.Drawing.Size(30, 15);
+            this.lblRide.TabIndex = 124;
+            this.lblRide.Text = "Ride";
+            // 
+            // lblPilot
+            // 
+            this.lblPilot.AutoSize = true;
+            this.lblPilot.Location = new System.Drawing.Point(589, 497);
+            this.lblPilot.Name = "lblPilot";
+            this.lblPilot.Size = new System.Drawing.Size(31, 15);
+            this.lblPilot.TabIndex = 123;
+            this.lblPilot.Text = "Pilot";
+            // 
+            // lblPersuasion
+            // 
+            this.lblPersuasion.AutoSize = true;
+            this.lblPersuasion.Location = new System.Drawing.Point(556, 466);
+            this.lblPersuasion.Name = "lblPersuasion";
+            this.lblPersuasion.Size = new System.Drawing.Size(64, 15);
+            this.lblPersuasion.TabIndex = 122;
+            this.lblPersuasion.Text = "Persuasion";
+            // 
+            // lblPerception
+            // 
+            this.lblPerception.AutoSize = true;
+            this.lblPerception.Location = new System.Drawing.Point(556, 435);
+            this.lblPerception.Name = "lblPerception";
+            this.lblPerception.Size = new System.Drawing.Size(64, 15);
+            this.lblPerception.TabIndex = 121;
+            this.lblPerception.Text = "Perception";
+            // 
+            // survivalTextBox
+            // 
+            this.survivalTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.survivalTextBox.Location = new System.Drawing.Point(626, 585);
+            this.survivalTextBox.Multiline = true;
+            this.survivalTextBox.Name = "survivalTextBox";
+            this.survivalTextBox.PlaceholderText = "0";
+            this.survivalTextBox.ReadOnly = true;
+            this.survivalTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.survivalTextBox.Size = new System.Drawing.Size(60, 25);
+            this.survivalTextBox.TabIndex = 120;
+            // 
+            // stealthTextBox
+            // 
+            this.stealthTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.stealthTextBox.Location = new System.Drawing.Point(626, 554);
+            this.stealthTextBox.Multiline = true;
+            this.stealthTextBox.Name = "stealthTextBox";
+            this.stealthTextBox.PlaceholderText = "0";
+            this.stealthTextBox.ReadOnly = true;
+            this.stealthTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.stealthTextBox.Size = new System.Drawing.Size(60, 25);
+            this.stealthTextBox.TabIndex = 119;
+            // 
+            // rideTextBox
+            // 
+            this.rideTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rideTextBox.Location = new System.Drawing.Point(626, 523);
+            this.rideTextBox.Multiline = true;
+            this.rideTextBox.Name = "rideTextBox";
+            this.rideTextBox.PlaceholderText = "0";
+            this.rideTextBox.ReadOnly = true;
+            this.rideTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.rideTextBox.Size = new System.Drawing.Size(60, 25);
+            this.rideTextBox.TabIndex = 118;
+            // 
+            // pilotTextBox
+            // 
+            this.pilotTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pilotTextBox.Location = new System.Drawing.Point(626, 492);
+            this.pilotTextBox.Multiline = true;
+            this.pilotTextBox.Name = "pilotTextBox";
+            this.pilotTextBox.PlaceholderText = "0";
+            this.pilotTextBox.ReadOnly = true;
+            this.pilotTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pilotTextBox.Size = new System.Drawing.Size(60, 25);
+            this.pilotTextBox.TabIndex = 117;
+            // 
+            // persuasionTextBox
+            // 
+            this.persuasionTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.persuasionTextBox.Location = new System.Drawing.Point(626, 461);
+            this.persuasionTextBox.Multiline = true;
+            this.persuasionTextBox.Name = "persuasionTextBox";
+            this.persuasionTextBox.PlaceholderText = "0";
+            this.persuasionTextBox.ReadOnly = true;
+            this.persuasionTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.persuasionTextBox.Size = new System.Drawing.Size(60, 25);
+            this.persuasionTextBox.TabIndex = 116;
+            // 
+            // perceptionTextBox
+            // 
+            this.perceptionTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.perceptionTextBox.Location = new System.Drawing.Point(626, 430);
+            this.perceptionTextBox.Multiline = true;
+            this.perceptionTextBox.Name = "perceptionTextBox";
+            this.perceptionTextBox.PlaceholderText = "0";
+            this.perceptionTextBox.ReadOnly = true;
+            this.perceptionTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.perceptionTextBox.Size = new System.Drawing.Size(60, 25);
+            this.perceptionTextBox.TabIndex = 115;
+            // 
+            // numericUpDown20
+            // 
+            this.numericUpDown20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown20.Location = new System.Drawing.Point(692, 399);
+            this.numericUpDown20.Name = "numericUpDown20";
+            this.numericUpDown20.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown20.TabIndex = 114;
+            // 
+            // mechanicsTextBox
+            // 
+            this.mechanicsTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mechanicsTextBox.Location = new System.Drawing.Point(626, 399);
+            this.mechanicsTextBox.Multiline = true;
+            this.mechanicsTextBox.Name = "mechanicsTextBox";
+            this.mechanicsTextBox.PlaceholderText = "0";
+            this.mechanicsTextBox.ReadOnly = true;
+            this.mechanicsTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.mechanicsTextBox.Size = new System.Drawing.Size(60, 25);
+            this.mechanicsTextBox.TabIndex = 113;
+            // 
+            // lblMechanics
+            // 
+            this.lblMechanics.AutoSize = true;
+            this.lblMechanics.Location = new System.Drawing.Point(557, 404);
+            this.lblMechanics.Name = "lblMechanics";
+            this.lblMechanics.Size = new System.Drawing.Size(64, 15);
+            this.lblMechanics.TabIndex = 112;
+            this.lblMechanics.Text = "Mechanics";
+            // 
+            // lblUseTheForce
+            // 
+            this.lblUseTheForce.AutoSize = true;
+            this.lblUseTheForce.Location = new System.Drawing.Point(758, 497);
+            this.lblUseTheForce.Name = "lblUseTheForce";
+            this.lblUseTheForce.Size = new System.Drawing.Size(80, 15);
+            this.lblUseTheForce.TabIndex = 140;
+            this.lblUseTheForce.Text = "Use The Force";
+            // 
+            // lblUseComputer
+            // 
+            this.lblUseComputer.AutoSize = true;
+            this.lblUseComputer.Location = new System.Drawing.Point(758, 466);
+            this.lblUseComputer.Name = "lblUseComputer";
+            this.lblUseComputer.Size = new System.Drawing.Size(83, 15);
+            this.lblUseComputer.TabIndex = 139;
+            this.lblUseComputer.Text = "Use Computer";
+            // 
+            // lblTreatInjury
+            // 
+            this.lblTreatInjury.AutoSize = true;
+            this.lblTreatInjury.Location = new System.Drawing.Point(773, 434);
+            this.lblTreatInjury.Name = "lblTreatInjury";
+            this.lblTreatInjury.Size = new System.Drawing.Size(65, 15);
+            this.lblTreatInjury.TabIndex = 138;
+            this.lblTreatInjury.Text = "Treat Injury";
+            // 
+            // lblSwim
+            // 
+            this.lblSwim.AutoSize = true;
+            this.lblSwim.Location = new System.Drawing.Point(802, 405);
+            this.lblSwim.Name = "lblSwim";
+            this.lblSwim.Size = new System.Drawing.Size(36, 15);
+            this.lblSwim.TabIndex = 137;
+            this.lblSwim.Text = "Swim";
+            // 
+            // useTheForceTextBox
+            // 
+            this.useTheForceTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.useTheForceTextBox.Location = new System.Drawing.Point(844, 491);
+            this.useTheForceTextBox.Multiline = true;
+            this.useTheForceTextBox.Name = "useTheForceTextBox";
+            this.useTheForceTextBox.PlaceholderText = "0";
+            this.useTheForceTextBox.ReadOnly = true;
+            this.useTheForceTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.useTheForceTextBox.Size = new System.Drawing.Size(60, 25);
+            this.useTheForceTextBox.TabIndex = 136;
+            // 
+            // useComputerTextBox
+            // 
+            this.useComputerTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.useComputerTextBox.Location = new System.Drawing.Point(844, 461);
+            this.useComputerTextBox.Multiline = true;
+            this.useComputerTextBox.Name = "useComputerTextBox";
+            this.useComputerTextBox.PlaceholderText = "0";
+            this.useComputerTextBox.ReadOnly = true;
+            this.useComputerTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.useComputerTextBox.Size = new System.Drawing.Size(60, 25);
+            this.useComputerTextBox.TabIndex = 135;
+            // 
+            // treatInjuryTextBox
+            // 
+            this.treatInjuryTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.treatInjuryTextBox.Location = new System.Drawing.Point(844, 430);
+            this.treatInjuryTextBox.Multiline = true;
+            this.treatInjuryTextBox.Name = "treatInjuryTextBox";
+            this.treatInjuryTextBox.PlaceholderText = "0";
+            this.treatInjuryTextBox.ReadOnly = true;
+            this.treatInjuryTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.treatInjuryTextBox.Size = new System.Drawing.Size(60, 25);
+            this.treatInjuryTextBox.TabIndex = 134;
+            // 
+            // swimTextBox
+            // 
+            this.swimTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.swimTextBox.Location = new System.Drawing.Point(844, 400);
+            this.swimTextBox.Multiline = true;
+            this.swimTextBox.Name = "swimTextBox";
+            this.swimTextBox.PlaceholderText = "0";
+            this.swimTextBox.ReadOnly = true;
+            this.swimTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.swimTextBox.Size = new System.Drawing.Size(60, 25);
+            this.swimTextBox.TabIndex = 133;
+            // 
+            // numericUpDown21
+            // 
+            this.numericUpDown21.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown21.Location = new System.Drawing.Point(910, 491);
+            this.numericUpDown21.Name = "numericUpDown21";
+            this.numericUpDown21.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown21.TabIndex = 144;
+            // 
+            // numericUpDown22
+            // 
+            this.numericUpDown22.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown22.Location = new System.Drawing.Point(910, 461);
+            this.numericUpDown22.Name = "numericUpDown22";
+            this.numericUpDown22.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown22.TabIndex = 143;
+            // 
+            // numericUpDown23
+            // 
+            this.numericUpDown23.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown23.Location = new System.Drawing.Point(910, 430);
+            this.numericUpDown23.Name = "numericUpDown23";
+            this.numericUpDown23.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown23.TabIndex = 142;
+            // 
+            // numericUpDown24
+            // 
+            this.numericUpDown24.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown24.Location = new System.Drawing.Point(910, 400);
+            this.numericUpDown24.Name = "numericUpDown24";
+            this.numericUpDown24.Size = new System.Drawing.Size(60, 25);
+            this.numericUpDown24.TabIndex = 141;
             // 
             // CharacterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 955);
-            this.Controls.Add(this.lblAcrobaticsSkillValue);
+            this.ClientSize = new System.Drawing.Size(1265, 898);
+            this.Controls.Add(this.numericUpDown21);
+            this.Controls.Add(this.numericUpDown22);
+            this.Controls.Add(this.numericUpDown23);
+            this.Controls.Add(this.numericUpDown24);
+            this.Controls.Add(this.lblUseTheForce);
+            this.Controls.Add(this.lblUseComputer);
+            this.Controls.Add(this.lblTreatInjury);
+            this.Controls.Add(this.lblSwim);
+            this.Controls.Add(this.useTheForceTextBox);
+            this.Controls.Add(this.useComputerTextBox);
+            this.Controls.Add(this.treatInjuryTextBox);
+            this.Controls.Add(this.swimTextBox);
+            this.Controls.Add(this.numericUpDown14);
+            this.Controls.Add(this.numericUpDown15);
+            this.Controls.Add(this.numericUpDown16);
+            this.Controls.Add(this.numericUpDown17);
+            this.Controls.Add(this.numericUpDown18);
+            this.Controls.Add(this.numericUpDown19);
+            this.Controls.Add(this.lblSurvival);
+            this.Controls.Add(this.lblStealth);
+            this.Controls.Add(this.lblRide);
+            this.Controls.Add(this.lblPilot);
+            this.Controls.Add(this.lblPersuasion);
+            this.Controls.Add(this.lblPerception);
+            this.Controls.Add(this.survivalTextBox);
+            this.Controls.Add(this.stealthTextBox);
+            this.Controls.Add(this.rideTextBox);
+            this.Controls.Add(this.pilotTextBox);
+            this.Controls.Add(this.persuasionTextBox);
+            this.Controls.Add(this.perceptionTextBox);
+            this.Controls.Add(this.numericUpDown20);
+            this.Controls.Add(this.mechanicsTextBox);
+            this.Controls.Add(this.lblMechanics);
+            this.Controls.Add(this.numericUpDown7);
+            this.Controls.Add(this.numericUpDown8);
+            this.Controls.Add(this.numericUpDown9);
+            this.Controls.Add(this.numericUpDown10);
+            this.Controls.Add(this.numericUpDown11);
+            this.Controls.Add(this.numericUpDown12);
+            this.Controls.Add(this.numericUpDown13);
+            this.Controls.Add(this.numericUpDown6);
+            this.Controls.Add(this.numericUpDown5);
+            this.Controls.Add(this.numericUpDown4);
+            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.lblKnowledgeTechnology);
+            this.Controls.Add(this.lblKnowledgeTactics);
+            this.Controls.Add(this.lblKnowledgeSocialSciences);
+            this.Controls.Add(this.lblKnowledgePhysicalSciences);
+            this.Controls.Add(this.lblKnowledgeLifeSciences);
+            this.Controls.Add(this.knowledgeTechnologyTextBox);
+            this.Controls.Add(this.knowledgeTacticsTextBox);
+            this.Controls.Add(this.knowledgeSocialSciencesTextBox);
+            this.Controls.Add(this.knowledgePhysicalSciencesTextBox);
+            this.Controls.Add(this.knowledgeLifeSciencesTextBox);
+            this.Controls.Add(this.lblKnowledgeGalacticLore);
+            this.Controls.Add(this.lblKnowledgeBureaucracy);
+            this.Controls.Add(this.lblJump);
+            this.Controls.Add(this.lblInitiative);
+            this.Controls.Add(this.lblGatherInformation);
+            this.Controls.Add(this.lblEndurance);
+            this.Controls.Add(this.lblDeception);
+            this.Controls.Add(this.lblClimb);
+            this.Controls.Add(this.knowledgeGalacticLoreTextBox);
+            this.Controls.Add(this.knowledgeBureaucracyTextBox);
+            this.Controls.Add(this.jumpTextBox);
+            this.Controls.Add(this.initiativeTextBox);
+            this.Controls.Add(this.gatherInformationTextBox);
+            this.Controls.Add(this.enduranceTextBox);
+            this.Controls.Add(this.deceptionTextBox);
+            this.Controls.Add(this.climbTextBox);
+            this.Controls.Add(this.acrobaticsMiscBonusNumericUpDown);
+            this.Controls.Add(this.acrobaticsTextBox);
+            this.Controls.Add(this.lblAcrobatics);
             this.Controls.Add(this.skillFocusAndTrainingButton);
             this.Controls.Add(this.damageThresholdBonusNumericUpDown);
             this.Controls.Add(this.damageThresholdTextBox);
@@ -875,6 +1781,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.willDefenseBonusNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bonusHPNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.damageThresholdBonusNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.acrobaticsMiscBonusNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -950,6 +1881,80 @@
         private TextBox damageThresholdTextBox;
         private NumericUpDown damageThresholdBonusNumericUpDown;
         private Button skillFocusAndTrainingButton;
-        private Label lblAcrobaticsSkillValue;
+        private Label lblAcrobatics;
+        private TextBox acrobaticsTextBox;
+        private NumericUpDown acrobaticsMiscBonusNumericUpDown;
+        private TextBox climbTextBox;
+        private TextBox deceptionTextBox;
+        private TextBox enduranceTextBox;
+        private TextBox gatherInformationTextBox;
+        private TextBox initiativeTextBox;
+        private TextBox jumpTextBox;
+        private TextBox knowledgeBureaucracyTextBox;
+        private TextBox knowledgeGalacticLoreTextBox;
+        private Label lblClimb;
+        private Label lblDeception;
+        private Label lblEndurance;
+        private Label lblGatherInformation;
+        private Label lblInitiative;
+        private Label lblJump;
+        private Label lblKnowledgeBureaucracy;
+        private Label lblKnowledgeGalacticLore;
+        private TextBox knowledgeLifeSciencesTextBox;
+        private TextBox knowledgePhysicalSciencesTextBox;
+        private TextBox knowledgeSocialSciencesTextBox;
+        private TextBox knowledgeTacticsTextBox;
+        private TextBox knowledgeTechnologyTextBox;
+        private Label lblKnowledgeLifeSciences;
+        private Label lblKnowledgePhysicalSciences;
+        private Label lblKnowledgeSocialSciences;
+        private Label lblKnowledgeTactics;
+        private Label lblKnowledgeTechnology;
+        private NumericUpDown numericUpDown1;
+        private NumericUpDown numericUpDown2;
+        private NumericUpDown numericUpDown3;
+        private NumericUpDown numericUpDown4;
+        private NumericUpDown numericUpDown5;
+        private NumericUpDown numericUpDown6;
+        private NumericUpDown numericUpDown7;
+        private NumericUpDown numericUpDown8;
+        private NumericUpDown numericUpDown9;
+        private NumericUpDown numericUpDown10;
+        private NumericUpDown numericUpDown11;
+        private NumericUpDown numericUpDown12;
+        private NumericUpDown numericUpDown13;
+        private NumericUpDown numericUpDown14;
+        private NumericUpDown numericUpDown15;
+        private NumericUpDown numericUpDown16;
+        private NumericUpDown numericUpDown17;
+        private NumericUpDown numericUpDown18;
+        private NumericUpDown numericUpDown19;
+        private Label lblSurvival;
+        private Label lblStealth;
+        private Label lblRide;
+        private Label lblPilot;
+        private Label lblPersuasion;
+        private Label lblPerception;
+        private TextBox survivalTextBox;
+        private TextBox stealthTextBox;
+        private TextBox rideTextBox;
+        private TextBox pilotTextBox;
+        private TextBox persuasionTextBox;
+        private TextBox perceptionTextBox;
+        private NumericUpDown numericUpDown20;
+        private TextBox mechanicsTextBox;
+        private Label lblMechanics;
+        private Label lblUseTheForce;
+        private Label lblUseComputer;
+        private Label lblTreatInjury;
+        private Label lblSwim;
+        private TextBox useTheForceTextBox;
+        private TextBox useComputerTextBox;
+        private TextBox treatInjuryTextBox;
+        private TextBox swimTextBox;
+        private NumericUpDown numericUpDown21;
+        private NumericUpDown numericUpDown22;
+        private NumericUpDown numericUpDown23;
+        private NumericUpDown numericUpDown24;
     }
 }
