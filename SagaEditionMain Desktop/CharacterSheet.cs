@@ -169,11 +169,8 @@ namespace SagaEditionMain_Desktop
             CharacterHP.CurrentShieldRating = Convert.ToInt32(currentShieldRatingNumericUpDown.Value);
             CharacterHP.MaxShieldRating = Convert.ToInt32(maxShieldRatingNumericUpDown.Value);
             //Set Heroic Level
-            HeroicLevel = 0;
-            foreach (var characterClass in AllClasses.ClassList)
-            {
-                HeroicLevel = HeroicLevel + characterClass.Level;
-            }
+            HeroicLevel = CalculateHeroicLevel.SetHeroicLevel(AllClasses.ClassList);
+            
             //Show Species
             SelectedSpecies = speciesComboBox.SelectedItem as Species.SpeciesBase;
 
@@ -192,6 +189,18 @@ namespace SagaEditionMain_Desktop
             refDefenseTextBox.Text = CharacterInfoSet.CharacterDefenses.ReflexDefense.ToString();
             willDefTextBox.Text = CharacterInfoSet.CharacterDefenses.WillDefense.ToString();
 
+            //Show Attack Values
+            int baseAttackBonus = CalculateAttack.CalculateBaB(AllClasses.ClassList, Convert.ToInt32(babBonusNumericUpDown.Value));
+            baseAttackBonusTextBox.Text = baseAttackBonus.ToString();
+            int rangedAttackBonus = CalculateAttack.CalculateRangedAttack(baseAttackBonus, CharacterInfoSet.CharacterAttributeModifiers.DexterityModifier);
+            rangedAttackBonusTextBox.Text = rangedAttackBonus.ToString();
+            int rangedDamageBonus = CalculateAttack.CalculateRangedDamageBonus(HeroicLevel);
+            rangedDamageTextBox.Text = rangedDamageBonus.ToString();
+            int meleeAttackBonus = CalculateAttack.CalculateMeleeAttack(baseAttackBonus, HeroicLevel, CharacterInfoSet.CharacterAttributeModifiers.StrengthModifier);
+            meleeAttackBonusTextBox.Text = meleeAttackBonus.ToString();
+            int meleeDamageBonus = CalculateAttack.CalculateMeleeDamageBonus(HeroicLevel, CharacterInfoSet.CharacterAttributeModifiers.StrengthModifier);
+            meleeDamageTextBox.Text = meleeDamageBonus.ToString();
+            
             //Show SkillValues
             acrobaticsTextBox.Text = CharacterInfoSet.CharacterSkills.AcrobaticsSkill.ToString();
             climbTextBox.Text = CharacterInfoSet.CharacterSkills.ClimbSkill.ToString();
@@ -219,5 +228,6 @@ namespace SagaEditionMain_Desktop
             useComputerTextBox.Text = CharacterInfoSet.CharacterSkills.UseComputerSkill.ToString();
             useTheForceTextBox.Text = CharacterInfoSet.CharacterSkills.UseForceSkill.ToString();
         }
+
     }
 }
